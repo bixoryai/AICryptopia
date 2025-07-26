@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AICryptopia - Investor Deck</title>
+    
+    <!-- External CDN Dependencies -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Local Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="slideshow-container">
+        <!-- Navigation Controls -->
+        <div class="nav-controls">
+            <button class="nav-btn prev-btn" onclick="changeSlide(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <span class="slide-counter">
+                <span id="current-slide">1</span> / <span id="total-slides">15</span>
+            </span>
+            <button class="nav-btn next-btn" onclick="changeSlide(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Slide 1: Title -->
+        <div class="slide active" id="slide-1">
+            <div class="slide-content">
+                <div class="fusion-svg">
+                    <svg width="120" height="120" viewBox="0 0 120 120">
+                        <circle cx="60" cy="60" r="50" fill="none" stroke="#00ffff" stroke-width="2" class="glow-element"/>
+                        <circle cx="40" cy="40" r="15" fill="#00ffff" opacity="0.7"/>
+                        <circle cx="80" cy="40" r="15" fill="#ff00ff" opacity="0.7"/>
+                        <circle cx="60" cy="80" r="15" fill="#00ff00" opacity="0.7"/>
+                        <line x1="40" y1="40" x2="80" y2="40" stroke="#00ffff" stroke-width="2"/>
+                        <line x1="40" y1="40" x2="60" y2="80" stroke="#00ffff" stroke-width="2"/>
+                        <line x1="80" y1="40" x2="60" y2="80" stroke="#00ffff" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h1 class="title-main">AICryptopia: The Happy Wealth-Building Place for AI + Web3 Players</h1>
+                <h2 class="title-sub">Democratizing Decentralized Intelligence for 100x Returns</h2>
+                <div class="title-meta">
+                    <p><i class="fas fa-rocket"></i> 🚀 Prepared by: AICryptopia Team</p>
+                    <p>📅 Date: January 2025</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: The Opportunity -->
+        <div class="slide" id="slide-2">
+            <div class="slide-content">
+                <h1><i class="fas fa-chart-line"></i> The Opportunity 📈</h1>
+                <div class="content-grid">
+                    <div class="content-text">
+                        <ul>
+                            <li><strong>Market Size:</strong> AI + Web3 market growing from $703M → $1T+ by 2030</li>
+                            <li><strong>Key Trends:</strong> AI agents, DePIN networks, tokenized utilities</li>
+                            <li><strong>Market Pain:</strong> Fragmented ecosystems causing missed wealth opportunities</li>
+                            <li><strong>Timing:</strong> Perfect convergence of mature AI and emerging Web3 infrastructure</li>
+                        </ul>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="opportunityChart" width="400" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Problem & Solution -->
+        <div class="slide" id="slide-3">
+            <div class="slide-content">
+                <h1><i class="fas fa-lightbulb"></i> Problem & Solution 💡</h1>
+                <div class="problem-solution">
+                    <div class="problem-section">
+                        <h3>❌ The Problem</h3>
+                        <ul>
+                            <li>Wealth opportunities scattered across fragmented platforms</li>
+                            <li>Complex learning curves for AI + Web3 tools</li>
+                            <li>Lack of unified intelligence for decision-making</li>
+                            <li>Missing connection between knowledge and tokenized rewards</li>
+                        </ul>
+                    </div>
+                    <div class="arrow-container">
+                        <svg width="100" height="50" viewBox="0 0 100 50">
+                            <path d="M10 25 L70 25 M60 15 L70 25 L60 35" stroke="#00ffff" stroke-width="3" fill="none" class="glow-element"/>
+                        </svg>
+                    </div>
+                    <div class="solution-section">
+                        <h3>✅ Our Solution</h3>
+                        <ul>
+                            <li>Unified agent hub for insights, utilities & rewards</li>
+                            <li>Simple interface for complex AI + Web3 interactions</li>
+                            <li>Intelligent recommendations based on user behavior</li>
+                            <li>Tokenized ecosystem rewarding participation and knowledge</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: What We Build -->
+        <div class="slide" id="slide-4">
+            <div class="slide-content">
+                <h1><i class="fas fa-road"></i> What We Build ⏳</h1>
+                <div class="content-grid">
+                    <div class="content-text">
+                        <h3>🏗️ Phased Ecosystem Development</h3>
+                        <ul>
+                            <li><strong>Phase 1:</strong> Knowledge Hub - AI research, insights, educational content</li>
+                            <li><strong>Phase 2:</strong> Utilities Platform - Tools, agents, automation services</li>
+                            <li><strong>Phase 3:</strong> Tokenomics Layer - Rewards, governance, wealth distribution</li>
+                        </ul>
+                        <div class="timeline-description">
+                            <p>🎯 <strong>Goal:</strong> Create compounding value through each phase</p>
+                            <p>🔄 <strong>Flywheel:</strong> Knowledge → Tools → Tokens → More Users → More Knowledge</p>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="buildChart" width="400" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: User Value & Uniqueness -->
+        <div class="slide" id="slide-5">
+            <div class="slide-content">
+                <h1><i class="fas fa-star"></i> User Value & Uniqueness ⭐</h1>
+                <div class="value-grid">
+                    <div class="user-value">
+                        <h3>💎 User Value Proposition</h3>
+                        <ul>
+                            <li><strong>Discover:</strong> AI-curated opportunities in Web3 space</li>
+                            <li><strong>Earn:</strong> Multiple revenue streams through platform engagement</li>
+                            <li><strong>Own:</strong> Stake in the ecosystem through tokenized participation</li>
+                            <li><strong>Grow:</strong> Compound wealth through intelligent automation</li>
+                        </ul>
+                    </div>
+                    <div class="uniqueness">
+                        <h3>🚀 Competitive Advantages</h3>
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Feature</th>
+                                    <th>AICryptopia</th>
+                                    <th>Competitors</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>AI + Web3 Integration</td>
+                                    <td>✅ Native</td>
+                                    <td>❌ Fragmented</td>
+                                </tr>
+                                <tr>
+                                    <td>User Experience</td>
+                                    <td>✅ Simple & Happy</td>
+                                    <td>❌ Complex</td>
+                                </tr>
+                                <tr>
+                                    <td>Monetization</td>
+                                    <td>✅ Multi-stream</td>
+                                    <td>❌ Limited</td>
+                                </tr>
+                                <tr>
+                                    <td>Community Rewards</td>
+                                    <td>✅ Tokenized</td>
+                                    <td>❌ Traditional</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Market Strategy -->
+        <div class="slide" id="slide-6">
+            <div class="slide-content">
+                <h1><i class="fas fa-target"></i> Market Strategy 🎯</h1>
+                <div class="strategy-content">
+                    <h3>Go-to-Market Approach</h3>
+                    <ul>
+                        <li>Target early AI + Web3 adopters and crypto natives</li>
+                        <li>Content-first strategy to build authority and trust</li>
+                        <li>Community-driven growth through referral incentives</li>
+                        <li>Partnership with key AI and Web3 projects</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Business Model -->
+        <div class="slide" id="slide-7">
+            <div class="slide-content">
+                <h1><i class="fas fa-coins"></i> Business Model 💰</h1>
+                <div class="business-model">
+                    <h3>Multiple Revenue Streams</h3>
+                    <ul>
+                        <li><strong>Platform Fees:</strong> Transaction fees on agent services</li>
+                        <li><strong>Premium Subscriptions:</strong> Advanced features and insights</li>
+                        <li><strong>Token Economics:</strong> Platform token appreciation and staking rewards</li>
+                        <li><strong>Partnerships:</strong> Revenue sharing with integrated services</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Technology Architecture -->
+        <div class="slide" id="slide-8">
+            <div class="slide-content">
+                <h1><i class="fas fa-cogs"></i> Technology Architecture ⚙️</h1>
+                <div class="tech-content">
+                    <h3>Modern & Scalable Tech Stack</h3>
+                    <ul>
+                        <li><strong>Frontend:</strong> React, TypeScript, Web3 integration</li>
+                        <li><strong>Backend:</strong> Node.js, Python AI services, microservices</li>
+                        <li><strong>Blockchain:</strong> Ethereum, Polygon, cross-chain compatibility</li>
+                        <li><strong>AI/ML:</strong> OpenAI GPT, custom models, vector databases</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: Team -->
+        <div class="slide" id="slide-9">
+            <div class="slide-content">
+                <h1><i class="fas fa-users"></i> Team 👥</h1>
+                <div class="team-content">
+                    <h3>Experienced & Passionate Team</h3>
+                    <ul>
+                        <li>Deep expertise in AI, blockchain, and product development</li>
+                        <li>Track record of successful Web3 and AI projects</li>
+                        <li>Strong network in both AI and crypto communities</li>
+                        <li>Committed to the vision of democratizing wealth-building</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Roadmap -->
+        <div class="slide" id="slide-10">
+            <div class="slide-content">
+                <h1><i class="fas fa-map"></i> Roadmap 🗺️</h1>
+                <div class="roadmap-content">
+                    <h3>12-Month Development Plan</h3>
+                    <ul>
+                        <li><strong>Q1 2025:</strong> MVP launch, core team expansion</li>
+                        <li><strong>Q2 2025:</strong> Beta testing, community building</li>
+                        <li><strong>Q3 2025:</strong> Public launch, token generation event</li>
+                        <li><strong>Q4 2025:</strong> Scale operations, international expansion</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11: Market Validation -->
+        <div class="slide" id="slide-11">
+            <div class="slide-content">
+                <h1><i class="fas fa-check-circle"></i> Market Validation ✅</h1>
+                <div class="validation-content">
+                    <h3>Strong Market Indicators</h3>
+                    <ul>
+                        <li>Growing demand for AI-powered investment tools</li>
+                        <li>Increasing adoption of Web3 technologies</li>
+                        <li>Positive user feedback from early prototypes</li>
+                        <li>Interest from potential strategic partners</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 12: Financial Projections -->
+        <div class="slide" id="slide-12">
+            <div class="slide-content">
+                <h1><i class="fas fa-chart-bar"></i> Financial Projections 📊</h1>
+                <div class="projections-content">
+                    <h3>Revenue Growth Trajectory</h3>
+                    <ul>
+                        <li><strong>Year 1:</strong> $500K ARR (10K users)</li>
+                        <li><strong>Year 2:</strong> $2M ARR (50K users)</li>
+                        <li><strong>Year 3:</strong> $10M ARR (200K users)</li>
+                        <li><strong>Year 5:</strong> $50M ARR (1M users)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 13: Funding Request -->
+        <div class="slide" id="slide-13">
+            <div class="slide-content">
+                <h1><i class="fas fa-handshake"></i> Funding Request 🤝</h1>
+                <div class="funding-content">
+                    <h3>Investment Opportunity</h3>
+                    <ul>
+                        <li><strong>Seeking:</strong> $2M seed funding</li>
+                        <li><strong>Use of Funds:</strong> Team expansion, product development, marketing</li>
+                        <li><strong>Valuation:</strong> $10M pre-money</li>
+                        <li><strong>Expected ROI:</strong> 100x potential within 5 years</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 14: Next Steps -->
+        <div class="slide" id="slide-14">
+            <div class="slide-content">
+                <h1><i class="fas fa-forward"></i> Next Steps ➡️</h1>
+                <div class="next-steps-content">
+                    <h3>Ready to Move Forward</h3>
+                    <ul>
+                        <li>Schedule detailed technical deep-dive session</li>
+                        <li>Provide access to MVP and user feedback data</li>
+                        <li>Discuss partnership and investment terms</li>
+                        <li>Begin due diligence process</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 15: Thank You -->
+        <div class="slide" id="slide-15">
+            <div class="slide-content">
+                <div class="thank-you-section">
+                    <h1>Thank You! 🙏</h1>
+                    <div class="contact-info">
+                        <h3>Let's Build the Future of AI + Web3 Together</h3>
+                        <div class="contact-details">
+                            <p><i class="fas fa-envelope"></i> contact@aicryptopia.com</p>
+                            <p><i class="fas fa-globe"></i> www.aicryptopia.com</p>
+                            <p><i class="fab fa-twitter"></i> @AICryptopia</p>
+                        </div>
+                        <div class="cta-section">
+                            <p class="cta-text">🚀 Ready to join the AI + Web3 revolution?</p>
+                            <p class="cta-subtext">💰 Let's create 100x returns together! 💎</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/scripts.js"></script>
+</body>
+</html> 
