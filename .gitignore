@@ -1,0 +1,97 @@
+# AICryptopia Repository - Git Ignore Rules
+
+# =============================================================================
+# Internal Development Files (Not for Public View)
+# =============================================================================
+
+# Investor deck development/specification files
+investor-deck*.markdown
+investor-deck*.md
+
+# GitHub Pages setup documentation (internal use only)
+GITHUB_PAGES_SETUP.md
+
+# =============================================================================
+# Development Environment Files
+# =============================================================================
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows files
+Desktop.ini
+
+# =============================================================================
+# Build and Temporary Files
+# =============================================================================
+
+# Node.js (if used in future)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# =============================================================================
+# Sensitive Information (Security)
+# =============================================================================
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# API keys and secrets
+config/secrets.js
+secrets.json
+
+# =============================================================================
+# Analytics and Logs
+# =============================================================================
+
+# Log files
+*.log
+logs/
+
+# Analytics files (if added)
+analytics-config.json
+
+# =============================================================================
+# Future Development
+# =============================================================================
+
+# Backup files
+*.bak
+*.backup
+
+# Development notes
+dev-notes.md
+todo.md
+internal-notes.md
+
+# Test files
+test-*
+experimental/ 
