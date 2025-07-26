@@ -88,12 +88,17 @@ function showSlide(slideNumber) {
     const slides = document.querySelectorAll('.slide');
     slides.forEach(slide => {
         slide.classList.remove('active');
+        slide.removeAttribute('tabindex');
     });
     
     // Show current slide
     const currentSlideElement = document.getElementById(`slide-${slideNumber}`);
     if (currentSlideElement) {
         currentSlideElement.classList.add('active');
+        // Ensure slide can receive scroll events
+        currentSlideElement.setAttribute('tabindex', '0');
+        // Reset scroll position to top
+        currentSlideElement.scrollTop = 0;
     }
 }
 
@@ -674,10 +679,8 @@ window.presentationControls = {
 Chart.defaults.color = '#ffffff';
 Chart.defaults.backgroundColor = 'rgba(0, 255, 255, 0.1)';
 
-// Smooth scrolling prevention (for full-screen presentation)
-document.addEventListener('wheel', function(event) {
-    event.preventDefault();
-}, { passive: false });
+// Allow natural scrolling within slide content
+// Removed wheel event prevention to enable scroll wheel functionality
 
 // Prevent context menu for cleaner presentation
 document.addEventListener('contextmenu', function(event) {

@@ -35,7 +35,7 @@
                     </li>
                     <li class="index-item" data-slide="2" onclick="goToSlide(2)">
                         <span class="slide-number">02</span>
-                        <span class="slide-title">The Opportunity</span>
+                        <span class="slide-title">Market Opportunity</span>
                     </li>
                     <li class="index-item" data-slide="3" onclick="goToSlide(3)">
                         <span class="slide-number">03</span>
@@ -142,17 +142,66 @@
         <div class="slide" id="slide-2">
             <div class="slide-content">
                 <h1><i class="fas fa-chart-line"></i> The Opportunity 📈</h1>
-                <div class="content-grid">
-                    <div class="content-text">
-                        <ul>
-                            <li><strong>AI+Web3 Market:</strong> $703M in 2025, exploding to $1T+ as Web2 AI matures (stable LLMs enabling decentralized yields)</li>
-                            <li><strong>Trends:</strong> AI agents for trading (e.g., 15-20% APY in DePIN like io.net) 📊</li>
-                            <li><strong>User Pains:</strong> Fragmented info, high barriers to wealth—we solve with free-first tools</li>
-                            <li><strong>Timing:</strong> Regular users see crypto as "digital money" but face overcharges & complexity</li>
+                <div class="opportunity-layout-radial">
+                    <!-- Top Left Quadrant -->
+                    <div class="opportunity-card market-card quadrant-top-left">
+                        <div class="card-icon">🚀</div>
+                        <h3 class="card-title">Market Outlook</h3>
+                        <div class="card-highlight">Explosive Growth</div>
+                        <ul class="card-details">
+                            <li>US Bitcoin Strategic Reserve adoption</li>
+                            <li>Stablecoin legislation passed</li>
+                            <li>Institutional crypto validation accelerating</li>
+                            <li>$703M → $1T+ market expansion imminent</li>
                         </ul>
                     </div>
-                    <div class="chart-container">
-                        <canvas id="opportunityChart" width="400" height="300"></canvas>
+                    
+                    <!-- Top Right Quadrant -->
+                    <div class="opportunity-card trends-card quadrant-top-right">
+                        <div class="card-icon">🧠</div>
+                        <h3 class="card-title">AI + Web3 Revolution</h3>
+                        <div class="card-highlight">Intelligence Everywhere</div>
+                        <ul class="card-details">
+                            <li>AI-powered trading bots (15-20% APY)</li>
+                            <li>Intelligent DePIN infrastructure</li>
+                            <li>Smart contracts with AI decision-making</li>
+                            <li>AI-driven Web3 app development</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Central Chart -->
+                    <div class="chart-section-center">
+                        <div class="chart-container-radial">
+                            <div class="chart-title">The Opportunity</div>
+                            <canvas id="opportunityChart" width="400" height="280"></canvas>
+                            <div class="chart-subtitle">AI + Web3 Market Growth</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Bottom Left Quadrant -->
+                    <div class="opportunity-card pain-card quadrant-bottom-left">
+                        <div class="card-icon">💔</div>
+                        <h3 class="card-title">Access Barriers</h3>
+                        <div class="card-highlight">Wealth Gap Crisis</div>
+                        <ul class="card-details">
+                            <li>Complex Web3 interfaces exclude masses</li>
+                            <li>High fees lock out retail investors</li>
+                            <li>Fragmented tools & information</li>
+                            <li>Our solution: Free-first democratization</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Bottom Right Quadrant -->
+                    <div class="opportunity-card timing-card quadrant-bottom-right">
+                        <div class="card-icon">🌅</div>
+                        <h3 class="card-title">Web3 Migration</h3>
+                        <div class="card-highlight">Light at the Tunnel</div>
+                        <ul class="card-details">
+                            <li>Web2 → Web3 migration accelerating</li>
+                            <li>True decentralized world emerging</li>
+                            <li>"Digital money" becoming universal</li>
+                            <li>Users ready for simplified access</li>
+                        </ul>
                     </div>
                 </div>
             </div>

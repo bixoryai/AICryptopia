@@ -400,6 +400,8 @@ body {
     animation: slideIn 0.6s ease-in-out;
     overflow-y: auto;
     overflow-x: hidden;
+    outline: none;
+    cursor: default;
 }
 
 .slide.active {
@@ -1256,6 +1258,241 @@ li::before {
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
 }
 
+/* Radial Opportunity Layout */
+.opportunity-layout-radial {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 600px;
+    align-items: center;
+    justify-items: center;
+}
+
+/* Quadrant Positioning */
+.quadrant-top-left {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: end;
+    align-self: end;
+}
+
+.quadrant-top-right {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: start;
+    align-self: end;
+}
+
+.quadrant-bottom-left {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: end;
+    align-self: start;
+}
+
+.quadrant-bottom-right {
+    grid-column: 3;
+    grid-row: 3;
+    justify-self: start;
+    align-self: start;
+}
+
+.opportunity-card {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(26, 26, 46, 0.8) 100%);
+    border-radius: 15px;
+    padding: 2rem 2.2rem 3rem 2.2rem;
+    text-align: left;
+    transition: all 0.4s ease;
+    border: 2px solid transparent;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: visible;
+    width: 360px;
+    min-height: 340px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.opportunity-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    padding: 2px;
+    background: linear-gradient(135deg, #00ffff, #ff00ff, #00ff00);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.opportunity-card:hover::before {
+    opacity: 1;
+}
+
+.opportunity-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 255, 255, 0.3);
+}
+
+.card-icon {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    display: block;
+    text-shadow: 0 0 20px currentColor;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-shadow: 0 0 10px #00ffff;
+    text-align: center;
+}
+
+.card-highlight {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-align: center;
+    text-shadow: 0 0 15px currentColor;
+}
+
+.card-details {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+    flex-grow: 0;
+}
+
+.card-details li {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    color: #ffffff;
+    opacity: 0.9;
+    line-height: 1.4;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.card-details li:before {
+    content: "▶";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #00ffff;
+    font-size: 0.8rem;
+    text-shadow: 0 0 5px #00ffff;
+}
+
+.card-details li:last-child {
+    margin-bottom: 0;
+}
+
+/* Individual Card Themes */
+.market-card .card-icon {
+    color: #00ffff;
+}
+
+.market-card .card-highlight {
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.2), rgba(0, 255, 255, 0.1));
+    color: #00ffff;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+}
+
+.trends-card .card-icon {
+    color: #ff00ff;
+}
+
+.trends-card .card-highlight {
+    background: linear-gradient(135deg, rgba(255, 0, 255, 0.2), rgba(255, 0, 255, 0.1));
+    color: #ff00ff;
+    border: 1px solid rgba(255, 0, 255, 0.3);
+}
+
+.pain-card .card-icon {
+    color: #ffaa00;
+}
+
+.pain-card .card-highlight {
+    background: linear-gradient(135deg, rgba(255, 170, 0, 0.2), rgba(255, 170, 0, 0.1));
+    color: #ffaa00;
+    border: 1px solid rgba(255, 170, 0, 0.3);
+}
+
+.timing-card .card-icon {
+    color: #00ff00;
+}
+
+.timing-card .card-highlight {
+    background: linear-gradient(135deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 0, 0.1));
+    color: #00ff00;
+    border: 1px solid rgba(0, 255, 0, 0.3);
+}
+
+/* Central Chart Section */
+.chart-section-center {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.chart-container-radial {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(26, 26, 46, 0.9) 50%, rgba(0, 255, 255, 0.1) 100%);
+    border-radius: 20px;
+    padding: 2.5rem;
+    border: 3px solid #00ffff;
+    box-shadow: 
+        0 0 30px rgba(0, 255, 255, 0.4),
+        inset 0 0 20px rgba(0, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    position: relative;
+    width: 450px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart-title {
+    color: #00ffff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ffff;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+.chart-subtitle {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-top: 1.2rem;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.chart-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Enhanced Responsive Design for New Elements */
 @media (max-width: 1024px) {
     .content-grid {
@@ -1338,6 +1575,65 @@ li::before {
         padding: 1.2rem;
     }
     
+    .opportunity-layout-radial {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 1.5rem;
+        min-height: auto;
+    }
+    
+    .quadrant-top-left,
+    .quadrant-top-right,
+    .quadrant-bottom-left,
+    .quadrant-bottom-right {
+        grid-column: 1;
+        grid-row: auto;
+        justify-self: center;
+        align-self: auto;
+    }
+    
+    .chart-section-center {
+        grid-column: 1;
+        grid-row: auto;
+        order: 1;
+    }
+    
+    .quadrant-top-left { order: 2; }
+    .quadrant-top-right { order: 3; }
+    .quadrant-bottom-left { order: 4; }
+    .quadrant-bottom-right { order: 5; }
+    
+    .opportunity-card {
+        width: 100%;
+        max-width: 380px;
+        height: auto;
+        padding: 1.8rem 1.8rem 2.8rem 1.8rem;
+    }
+    
+    .chart-container-radial {
+        width: 350px;
+        height: 320px;
+        padding: 2rem;
+    }
+    
+    .card-icon {
+        font-size: 2.2rem;
+    }
+    
+    .card-title {
+        font-size: 1.2rem;
+    }
+    
+    .card-highlight {
+        font-size: 1.4rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .card-details li {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+    
     .swot-table th,
     .swot-table td {
         padding: 0.8rem;
@@ -1412,6 +1708,54 @@ li::before {
     
     .funding-details li {
         font-size: 1rem;
+    }
+    
+    .opportunity-layout-radial {
+        gap: 1rem;
+    }
+    
+    .opportunity-card {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+    }
+    
+    .chart-container-radial {
+        width: 280px;
+        height: 260px;
+        padding: 1.5rem;
+    }
+    
+    .card-icon {
+        font-size: 2rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .card-title {
+        font-size: 1.1rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .card-highlight {
+        font-size: 1.2rem;
+        padding: 0.3rem 0.6rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .card-details li {
+        font-size: 0.8rem;
+        margin-bottom: 0.4rem;
+    }
+    
+    .chart-title {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .chart-subtitle {
+        font-size: 0.8rem;
+        margin-top: 0.8rem;
     }
     
     .swot-table th,
