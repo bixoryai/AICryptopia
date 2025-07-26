@@ -14,16 +14,100 @@
 </head>
 <body>
     <div class="slideshow-container">
+        <!-- Sidebar Toggle Button -->
+        <button class="sidebar-toggle" onclick="toggleSidebar()" title="Toggle Slide Index">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Sidebar with Slide Index -->
+        <div class="sidebar" id="slide-sidebar">
+            <div class="sidebar-header">
+                <h3><i class="fas fa-list"></i> Slide Index</h3>
+                <button class="sidebar-close" onclick="toggleSidebar()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="sidebar-content">
+                <ul class="slide-index" id="slide-index">
+                    <li class="index-item active" data-slide="1" onclick="goToSlide(1)">
+                        <span class="slide-number">01</span>
+                        <span class="slide-title">AI Cryptopia - Gateway to Wealth</span>
+                    </li>
+                    <li class="index-item" data-slide="2" onclick="goToSlide(2)">
+                        <span class="slide-number">02</span>
+                        <span class="slide-title">The Opportunity</span>
+                    </li>
+                    <li class="index-item" data-slide="3" onclick="goToSlide(3)">
+                        <span class="slide-number">03</span>
+                        <span class="slide-title">Problem & Solution</span>
+                    </li>
+                    <li class="index-item" data-slide="4" onclick="goToSlide(4)">
+                        <span class="slide-number">04</span>
+                        <span class="slide-title">What We Build</span>
+                    </li>
+                    <li class="index-item" data-slide="5" onclick="goToSlide(5)">
+                        <span class="slide-number">05</span>
+                        <span class="slide-title">User Value & Uniqueness</span>
+                    </li>
+                    <li class="index-item" data-slide="6" onclick="goToSlide(6)">
+                        <span class="slide-number">06</span>
+                        <span class="slide-title">Growth & Earning Potential</span>
+                    </li>
+                    <li class="index-item" data-slide="7" onclick="goToSlide(7)">
+                        <span class="slide-number">07</span>
+                        <span class="slide-title">Staged Development (0 to 1)</span>
+                    </li>
+                    <li class="index-item" data-slide="8" onclick="goToSlide(8)">
+                        <span class="slide-number">08</span>
+                        <span class="slide-title">Market Appeal & 100x Return</span>
+                    </li>
+                    <li class="index-item" data-slide="9" onclick="goToSlide(9)">
+                        <span class="slide-number">09</span>
+                        <span class="slide-title">Competitive Challenges & Risks</span>
+                    </li>
+                    <li class="index-item" data-slide="10" onclick="goToSlide(10)">
+                        <span class="slide-number">10</span>
+                        <span class="slide-title">Team & Funding</span>
+                    </li>
+                    <li class="index-item" data-slide="11" onclick="goToSlide(11)">
+                        <span class="slide-number">11</span>
+                        <span class="slide-title">Market Validation</span>
+                    </li>
+                    <li class="index-item" data-slide="12" onclick="goToSlide(12)">
+                        <span class="slide-number">12</span>
+                        <span class="slide-title">Exit Strategy</span>
+                    </li>
+                    <li class="index-item" data-slide="13" onclick="goToSlide(13)">
+                        <span class="slide-number">13</span>
+                        <span class="slide-title">Next Steps</span>
+                    </li>
+                    <li class="index-item" data-slide="14" onclick="goToSlide(14)">
+                        <span class="slide-number">14</span>
+                        <span class="slide-title">Let's Build the Utopia</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Sidebar Overlay -->
+        <div class="sidebar-overlay" id="sidebar-overlay" onclick="closeSidebar()"></div>
+
         <!-- Navigation Controls -->
         <div class="nav-controls">
-            <button class="nav-btn prev-btn" onclick="changeSlide(-1)">
+            <button class="nav-btn home-btn" onclick="goToFirstSlide()" title="Go to Title Slide (Home)">
+                <i class="fas fa-home"></i>
+            </button>
+            <button class="nav-btn prev-btn" onclick="changeSlide(-1)" title="Previous Slide (←)">
                 <i class="fas fa-chevron-left"></i>
             </button>
             <span class="slide-counter">
-                <span id="current-slide">1</span> / <span id="total-slides">15</span>
+                <span id="current-slide">1</span> / <span id="total-slides">14</span>
             </span>
-            <button class="nav-btn next-btn" onclick="changeSlide(1)">
+            <button class="nav-btn next-btn" onclick="changeSlide(1)" title="Next Slide (→)">
                 <i class="fas fa-chevron-right"></i>
+            </button>
+            <button class="nav-btn end-btn" onclick="goToLastSlide()" title="Go to Final Slide (End)">
+                <i class="fas fa-flag-checkered"></i>
             </button>
         </div>
 
@@ -41,11 +125,15 @@
                         <line x1="80" y1="40" x2="60" y2="80" stroke="#00ffff" stroke-width="2"/>
                     </svg>
                 </div>
-                <h1 class="title-main">AICryptopia: The Happy Wealth-Building Place for AI + Web3 Players</h1>
-                <h2 class="title-sub">Democratizing Decentralized Intelligence for 100x Returns</h2>
+                <h1 class="title-main">AI Cryptopia</h1>
+                <h1 class="title-tagline">Your Happy Gateway to Wealth Building in AI + Web3 Space</h1>
+                <h2 class="title-sub">Democratizing Access to Generational Wealth with Decentralized AI</h2>
                 <div class="title-meta">
                     <p><i class="fas fa-rocket"></i> 🚀 Prepared by: AICryptopia Team</p>
                     <p>📅 Date: January 2025</p>
+                    <div class="cta-button">
+                        <button class="glow-button">Experience the Crypto Rush Utopia 💎</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -57,10 +145,10 @@
                 <div class="content-grid">
                     <div class="content-text">
                         <ul>
-                            <li><strong>Market Size:</strong> AI + Web3 market growing from $703M → $1T+ by 2030</li>
-                            <li><strong>Key Trends:</strong> AI agents, DePIN networks, tokenized utilities</li>
-                            <li><strong>Market Pain:</strong> Fragmented ecosystems causing missed wealth opportunities</li>
-                            <li><strong>Timing:</strong> Perfect convergence of mature AI and emerging Web3 infrastructure</li>
+                            <li><strong>AI+Web3 Market:</strong> $703M in 2025, exploding to $1T+ as Web2 AI matures (stable LLMs enabling decentralized yields)</li>
+                            <li><strong>Trends:</strong> AI agents for trading (e.g., 15-20% APY in DePIN like io.net) 📊</li>
+                            <li><strong>User Pains:</strong> Fragmented info, high barriers to wealth—we solve with free-first tools</li>
+                            <li><strong>Timing:</strong> Regular users see crypto as "digital money" but face overcharges & complexity</li>
                         </ul>
                     </div>
                     <div class="chart-container">
@@ -78,10 +166,10 @@
                     <div class="problem-section">
                         <h3>❌ The Problem</h3>
                         <ul>
-                            <li>Wealth opportunities scattered across fragmented platforms</li>
-                            <li>Complex learning curves for AI + Web3 tools</li>
-                            <li>Lack of unified intelligence for decision-making</li>
-                            <li>Missing connection between knowledge and tokenized rewards</li>
+                            <li>Regular users see crypto as "digital money" but face overcharges, complexity, and exclusion from yields</li>
+                            <li>50% drop-off in trading apps due to fee-heavy models</li>
+                            <li>Fragmented information creates barriers to wealth-building</li>
+                            <li>Existing platforms prioritize extraction over user value</li>
                         </ul>
                     </div>
                     <div class="arrow-container">
@@ -90,12 +178,12 @@
                         </svg>
                     </div>
                     <div class="solution-section">
-                        <h3>✅ Our Solution</h3>
+                        <h3>✅ AICryptopia: User-First Utopia</h3>
                         <ul>
-                            <li>Unified agent hub for insights, utilities & rewards</li>
-                            <li>Simple interface for complex AI + Web3 interactions</li>
-                            <li>Intelligent recommendations based on user behavior</li>
-                            <li>Tokenized ecosystem rewarding participation and knowledge</li>
+                            <li><strong>Free Knowledge Nexus:</strong> AI-curated trading insights (e.g., $VOI signals) ⚖️</li>
+                            <li><strong>Joyful Pay Utilities:</strong> Premium AI bots for verifiable alpha—users feel delighted to spend</li>
+                            <li><strong>Transparent Value:</strong> No hidden fees, voluntary upgrades for personalized strategies</li>
+                            <li><strong>Community Ownership:</strong> $AIC rewards for participation and knowledge sharing</li>
                         </ul>
                     </div>
                 </div>
@@ -108,15 +196,15 @@
                 <h1><i class="fas fa-road"></i> What We Build ⏳</h1>
                 <div class="content-grid">
                     <div class="content-text">
-                        <h3>🏗️ Phased Ecosystem Development</h3>
+                        <h3>🏗️ Phased from 0 to 1: Foundation-First Approach</h3>
                         <ul>
-                            <li><strong>Phase 1:</strong> Knowledge Hub - AI research, insights, educational content</li>
-                            <li><strong>Phase 2:</strong> Utilities Platform - Tools, agents, automation services</li>
-                            <li><strong>Phase 3:</strong> Tokenomics Layer - Rewards, governance, wealth distribution</li>
+                            <li><strong>Phase 1:</strong> Foundation Infra + Free Knowledge Nexus (Agent-curated how-to-trade guides)</li>
+                            <li><strong>Phase 2:</strong> Utilities Platform - AI trading tools with joyful pay model</li>
+                            <li><strong>Phase 3:</strong> $AIC Tokenomics - Burns/halvings for scarcity, community rewards</li>
                         </ul>
                         <div class="timeline-description">
-                            <p>🎯 <strong>Goal:</strong> Create compounding value through each phase</p>
-                            <p>🔄 <strong>Flywheel:</strong> Knowledge → Tools → Tokens → More Users → More Knowledge</p>
+                            <p>🎯 <strong>Start Small:</strong> Open-source leverage (e.g., Hugging Face for AI models) 🛠️</p>
+                            <p>🔄 <strong>Flywheel:</strong> Free Knowledge → Joyful Utils → $AIC Scarcity → Massive Adoption</p>
                         </div>
                     </div>
                     <div class="chart-container">
@@ -128,48 +216,48 @@
 
         <!-- Slide 5: User Value & Uniqueness -->
         <div class="slide" id="slide-5">
-            <div class="slide-content">
+            <div class="slide-content scrollable">
                 <h1><i class="fas fa-star"></i> User Value & Uniqueness ⭐</h1>
                 <div class="value-grid">
                     <div class="user-value">
                         <h3>💎 User Value Proposition</h3>
                         <ul>
-                            <li><strong>Discover:</strong> AI-curated opportunities in Web3 space</li>
-                            <li><strong>Earn:</strong> Multiple revenue streams through platform engagement</li>
-                            <li><strong>Own:</strong> Stake in the ecosystem through tokenized participation</li>
-                            <li><strong>Grow:</strong> Compound wealth through intelligent automation</li>
+                            <li><strong>Discover Free Insights:</strong> Trade $VOI with AI signals, access how-to-trade guides 💰</li>
+                            <li><strong>Earn Joyfully:</strong> Voluntary premiums for custom training—users feel delighted to pay</li>
+                            <li><strong>Own via $AIC:</strong> Community rewards for participation and knowledge sharing</li>
+                            <li><strong>Grow:</strong> Personalized 15-20% APY strategies through AI verifiability</li>
                         </ul>
                     </div>
                     <div class="uniqueness">
-                        <h3>🚀 Competitive Advantages</h3>
+                        <h3>🚀 Uniqueness vs Fee-Heavy Competitors</h3>
                         <table class="comparison-table">
                             <thead>
                                 <tr>
                                     <th>Feature</th>
                                     <th>AICryptopia</th>
-                                    <th>Competitors</th>
+                                    <th>Token Metrics, Others</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>AI + Web3 Integration</td>
-                                    <td>✅ Native</td>
-                                    <td>❌ Fragmented</td>
+                                    <td>Core Model</td>
+                                    <td>✅ User-First Free</td>
+                                    <td>❌ Fee-Heavy</td>
                                 </tr>
                                 <tr>
-                                    <td>User Experience</td>
-                                    <td>✅ Simple & Happy</td>
-                                    <td>❌ Complex</td>
+                                    <td>AI Verification</td>
+                                    <td>✅ ZK Proofs</td>
+                                    <td>❌ Black Box</td>
                                 </tr>
                                 <tr>
-                                    <td>Monetization</td>
-                                    <td>✅ Multi-stream</td>
-                                    <td>❌ Limited</td>
+                                    <td>Payment Model</td>
+                                    <td>✅ Joyful Voluntary</td>
+                                    <td>❌ Forced Subscriptions</td>
                                 </tr>
                                 <tr>
-                                    <td>Community Rewards</td>
-                                    <td>✅ Tokenized</td>
-                                    <td>❌ Traditional</td>
+                                    <td>Community Ownership</td>
+                                    <td>✅ $AIC Tokenized</td>
+                                    <td>❌ Centralized</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -178,82 +266,178 @@
             </div>
         </div>
 
-        <!-- Slide 6: Market Strategy -->
+        <!-- Slide 6: Growth & Earning Potential -->
         <div class="slide" id="slide-6">
             <div class="slide-content">
-                <h1><i class="fas fa-target"></i> Market Strategy 🎯</h1>
-                <div class="strategy-content">
-                    <h3>Go-to-Market Approach</h3>
-                    <ul>
-                        <li>Target early AI + Web3 adopters and crypto natives</li>
-                        <li>Content-first strategy to build authority and trust</li>
-                        <li>Community-driven growth through referral incentives</li>
-                        <li>Partnership with key AI and Web3 projects</li>
-                    </ul>
+                <h1><i class="fas fa-sync-alt"></i> Growth & Earning Potential 🔄</h1>
+                <div class="content-grid">
+                    <div class="content-text">
+                        <h3>Viral Flywheel Model</h3>
+                        <ul>
+                            <li><strong>Flywheel:</strong> Free Knowledge Attracts Users → Utilities Drive Engagement (2-5% fees on joyful pays) → Network Effects Boost $AIC</li>
+                            <li><strong>Scale Target:</strong> 100K Users → $100M TVL in ecosystem</li>
+                            <li><strong>Revenue Projections:</strong> Y3 $5M+ from voluntary premiums 📈</li>
+                            <li><strong>Token Value:</strong> $AIC burns from joyful pays create scarcity</li>
+                        </ul>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="growthChart" width="400" height="300"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 7: Business Model -->
+        <!-- Slide 7: Staged Development (0 to 1) -->
         <div class="slide" id="slide-7">
             <div class="slide-content">
-                <h1><i class="fas fa-coins"></i> Business Model 💰</h1>
-                <div class="business-model">
-                    <h3>Multiple Revenue Streams</h3>
-                    <ul>
-                        <li><strong>Platform Fees:</strong> Transaction fees on agent services</li>
-                        <li><strong>Premium Subscriptions:</strong> Advanced features and insights</li>
-                        <li><strong>Token Economics:</strong> Platform token appreciation and staking rewards</li>
-                        <li><strong>Partnerships:</strong> Revenue sharing with integrated services</li>
-                    </ul>
+                <h1><i class="fas fa-tools"></i> Staged Development (0 to 1) 🛠️</h1>
+                <div class="content-grid">
+                    <div class="content-text">
+                        <h3>First Principles Approach</h3>
+                        <ul>
+                            <li><strong>Modular Infra First:</strong> Open-source leverage → incremental free knowledge → joyful utilities</li>
+                            <li><strong>Y1 MVP:</strong> Attract 1K users with free knowledge nexus</li>
+                            <li><strong>Y2 Scale:</strong> Monetize voluntarily through joyful pay utilities</li>
+                            <li><strong>Risk Management:</strong> Build with quick user wins, validate before scaling 🏔️</li>
+                        </ul>
+                    </div>
+                    <div class="pyramid-container">
+                        <svg width="300" height="200" viewBox="0 0 300 200">
+                            <polygon points="150,20 50,180 250,180" fill="none" stroke="#00ffff" stroke-width="2" class="glow-element"/>
+                            <text x="150" y="40" text-anchor="middle" fill="#00ffff" font-size="12">💎 Wealth</text>
+                            <text x="150" y="100" text-anchor="middle" fill="#ff00ff" font-size="12">🔧 Joyful Utils</text>
+                            <text x="150" y="160" text-anchor="middle" fill="#00ff00" font-size="12">📚 Free Knowledge</text>
+                        </svg>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 8: Technology Architecture -->
+        <!-- Slide 8: Market Appeal & 100x Return -->
         <div class="slide" id="slide-8">
             <div class="slide-content">
-                <h1><i class="fas fa-cogs"></i> Technology Architecture ⚙️</h1>
-                <div class="tech-content">
-                    <h3>Modern & Scalable Tech Stack</h3>
-                    <ul>
-                        <li><strong>Frontend:</strong> React, TypeScript, Web3 integration</li>
-                        <li><strong>Backend:</strong> Node.js, Python AI services, microservices</li>
-                        <li><strong>Blockchain:</strong> Ethereum, Polygon, cross-chain compatibility</li>
-                        <li><strong>AI/ML:</strong> OpenAI GPT, custom models, vector databases</li>
-                    </ul>
+                <h1><i class="fas fa-chart-bar"></i> Market Appeal & 100x Return 💹</h1>
+                <div class="content-grid">
+                    <div class="content-text">
+                        <h3>$AIC Token Economics 💥</h3>
+                        <ul>
+                            <li><strong>Utility:</strong> Stake for premiums + scarcity from burns via joyful pays</li>
+                            <li><strong>Benchmark:</strong> $TAO achieved 1000x from user value—we target 100x in 3 years</li>
+                            <li><strong>Early Investment:</strong> Capture massive adoption in $1T market</li>
+                            <li><strong>Value Driver:</strong> Free knowledge attracts users → joyful utilities → $AIC appreciation</li>
+                        </ul>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="roiChart" width="400" height="300"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 9: Team -->
+        <!-- Slide 9: Competitive Challenges & Risks -->
         <div class="slide" id="slide-9">
-            <div class="slide-content">
-                <h1><i class="fas fa-users"></i> Team 👥</h1>
-                <div class="team-content">
-                    <h3>Experienced & Passionate Team</h3>
-                    <ul>
-                        <li>Deep expertise in AI, blockchain, and product development</li>
-                        <li>Track record of successful Web3 and AI projects</li>
-                        <li>Strong network in both AI and crypto communities</li>
-                        <li>Committed to the vision of democratizing wealth-building</li>
-                    </ul>
+            <div class="slide-content scrollable">
+                <h1><i class="fas fa-shield-alt"></i> Competitive Challenges & Risks 🛡️</h1>
+                <div class="content-grid">
+                    <div class="content-text">
+                        <h3>Transparent Risk Assessment ⚠️</h3>
+                        <ul>
+                            <li><strong>Challenges:</strong> Fee-heavy competitors (e.g., Token Metrics)—we disrupt with free-first model</li>
+                            <li><strong>Market Risk:</strong> Crypto volatility—mitigate with AI verifiability and ZK proofs</li>
+                            <li><strong>Talent Gap:</strong> Leverage open-source (Hugging Face) and modular approach</li>
+                            <li><strong>Adoption Risk:</strong> Counter with free knowledge nexus for viral growth</li>
+                        </ul>
+                    </div>
+                    <div class="swot-container">
+                        <table class="swot-table">
+                            <tr>
+                                <th>Strengths</th>
+                                <th>Opportunities</th>
+                            </tr>
+                            <tr>
+                                <td>• User-first model<br/>• AI verifiability<br/>• Open-source leverage</td>
+                                <td>• $1T market growth<br/>• Web2 AI maturity<br/>• DePIN emergence</td>
+                            </tr>
+                            <tr>
+                                <th>Weaknesses</th>
+                                <th>Threats</th>
+                            </tr>
+                            <tr>
+                                <td>• Early stage<br/>• Small team<br/>• Bootstrap resources</td>
+                                <td>• Big Tech entry<br/>• Regulatory changes<br/>• Market volatility</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 10: Roadmap -->
+        <!-- Slide 10: Team & Funding -->
         <div class="slide" id="slide-10">
-            <div class="slide-content">
-                <h1><i class="fas fa-map"></i> Roadmap 🗺️</h1>
-                <div class="roadmap-content">
-                    <h3>12-Month Development Plan</h3>
-                    <ul>
-                        <li><strong>Q1 2025:</strong> MVP launch, core team expansion</li>
-                        <li><strong>Q2 2025:</strong> Beta testing, community building</li>
-                        <li><strong>Q3 2025:</strong> Public launch, token generation event</li>
-                        <li><strong>Q4 2025:</strong> Scale operations, international expansion</li>
-                    </ul>
+            <div class="slide-content scrollable">
+                <h1><i class="fas fa-users"></i> Team & Funding 👥</h1>
+                <div class="team-comprehensive">
+                    <!-- Team Overview -->
+                    <div class="team-overview">
+                        <h3>🏗️ Lean Team + AI Leverage</h3>
+                        <div class="team-stats">
+                            <div class="stat-item">
+                                <span class="stat-number"><5</span>
+                                <span class="stat-label">Core Team + AI</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">$500K</span>
+                                <span class="stat-label">Seed Ask</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100x</span>
+                                <span class="stat-label">ROI Target</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Team Bios -->
+                    <div class="team-bios">
+                        <div class="bio-card-compact">
+                            <svg width="60" height="60" viewBox="0 0 60 60">
+                                <circle cx="30" cy="30" r="25" fill="none" stroke="#00ffff" stroke-width="2" class="glow-element"/>
+                                <circle cx="30" cy="22" r="8" fill="#00ffff" opacity="0.7"/>
+                                <path d="M15 48 Q30 42 45 48" stroke="#00ffff" stroke-width="2" fill="none"/>
+                            </svg>
+                            <div class="bio-info">
+                                <h4>Founder</h4>
+                                <p><strong>AI/Crypto Expert:</strong> Deep expertise in AI systems and crypto market dynamics. Vision for user-first utopia democratizing wealth.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bio-card-compact">
+                            <svg width="60" height="60" viewBox="0 0 60 60">
+                                <circle cx="30" cy="30" r="25" fill="none" stroke="#ff00ff" stroke-width="2" class="glow-element"/>
+                                <circle cx="30" cy="22" r="8" fill="#ff00ff" opacity="0.7"/>
+                                <path d="M15 48 Q30 42 45 48" stroke="#ff00ff" stroke-width="2" fill="none"/>
+                            </svg>
+                            <div class="bio-info">
+                                <h4>Dev Lead</h4>
+                                <p><strong>Web3 Specialist:</strong> Expert in decentralized systems, open-source leverage, and scalable blockchain applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Funding Allocation -->
+                    <div class="funding-section">
+                        <div class="funding-details">
+                            <h3>💰 $500K Seed Allocation</h3>
+                            <ul>
+                                <li><strong>Development (40%):</strong> MVP knowledge nexus + token launch</li>
+                                <li><strong>Marketing (30%):</strong> User acquisition & community building</li>
+                                <li><strong>Operations (20%):</strong> Infrastructure & legal compliance</li>
+                                <li><strong>Reserve (10%):</strong> Contingency & scaling preparation</li>
+                            </ul>
+                        </div>
+                        <div class="chart-container-compact">
+                            <canvas id="fundsChart" width="300" height="200"></canvas>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -263,80 +447,64 @@
             <div class="slide-content">
                 <h1><i class="fas fa-check-circle"></i> Market Validation ✅</h1>
                 <div class="validation-content">
-                    <h3>Strong Market Indicators</h3>
+                    <h3>Strong Market Indicators 🌟</h3>
                     <ul>
-                        <li>Growing demand for AI-powered investment tools</li>
-                        <li>Increasing adoption of Web3 technologies</li>
-                        <li>Positive user feedback from early prototypes</li>
-                        <li>Interest from potential strategic partners</li>
+                        <li><strong>Benchmark Success:</strong> $TAO achieved 1000x from user value—validates AI+crypto model</li>
+                        <li><strong>Early Traction:</strong> Free knowledge attracts viral growth in crypto communities</li>
+                        <li><strong>User Demand:</strong> High interest in "digital money" wealth tools with transparent value</li>
+                        <li><strong>Market Timing:</strong> Web2 AI maturity enables sophisticated decentralized applications</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 12: Financial Projections -->
+        <!-- Slide 12: Exit Strategy -->
         <div class="slide" id="slide-12">
             <div class="slide-content">
-                <h1><i class="fas fa-chart-bar"></i> Financial Projections 📊</h1>
-                <div class="projections-content">
-                    <h3>Revenue Growth Trajectory</h3>
+                <h1><i class="fas fa-door-open"></i> Exit Strategy 🚪</h1>
+                <div class="exit-content">
+                    <h3>Multiple Exit Pathways 📈</h3>
                     <ul>
-                        <li><strong>Year 1:</strong> $500K ARR (10K users)</li>
-                        <li><strong>Year 2:</strong> $2M ARR (50K users)</li>
-                        <li><strong>Year 3:</strong> $10M ARR (200K users)</li>
-                        <li><strong>Year 5:</strong> $50M ARR (1M users)</li>
+                        <li><strong>Acquisition Target:</strong> Major exchanges (e.g., Binance) seeking AI+Web3 user acquisition</li>
+                        <li><strong>Strategic Buyers:</strong> Big Tech companies expanding into crypto trading</li>
+                        <li><strong>IPO Potential:</strong> Public offering in 3-5 years based on user growth metrics</li>
+                        <li><strong>Value Driver:</strong> Massive user base from free-first model creates acquisition premium</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 13: Funding Request -->
+        <!-- Slide 13: Next Steps -->
         <div class="slide" id="slide-13">
             <div class="slide-content">
-                <h1><i class="fas fa-handshake"></i> Funding Request 🤝</h1>
-                <div class="funding-content">
-                    <h3>Investment Opportunity</h3>
+                <h1><i class="fas fa-forward"></i> Next Steps ⏱️</h1>
+                <div class="next-steps-content">
+                    <h3>Ready to Move Forward ⏩</h3>
                     <ul>
-                        <li><strong>Seeking:</strong> $2M seed funding</li>
-                        <li><strong>Use of Funds:</strong> Team expansion, product development, marketing</li>
-                        <li><strong>Valuation:</strong> $10M pre-money</li>
-                        <li><strong>Expected ROI:</strong> 100x potential within 5 years</li>
+                        <li><strong>Seed Close:</strong> Q3 2025 - targeting $500K for MVP development</li>
+                        <li><strong>MVP Launch:</strong> Q4 2025 - free knowledge nexus with 1K users</li>
+                        <li><strong>Token Launch:</strong> Early 2026 - $AIC tokenomics with community rewards</li>
+                        <li><strong>Scale Phase:</strong> Mid 2026 - joyful pay utilities and viral growth</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 14: Next Steps -->
+        <!-- Slide 14: Thank You -->
         <div class="slide" id="slide-14">
             <div class="slide-content">
-                <h1><i class="fas fa-forward"></i> Next Steps ➡️</h1>
-                <div class="next-steps-content">
-                    <h3>Ready to Move Forward</h3>
-                    <ul>
-                        <li>Schedule detailed technical deep-dive session</li>
-                        <li>Provide access to MVP and user feedback data</li>
-                        <li>Discuss partnership and investment terms</li>
-                        <li>Begin due diligence process</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Slide 15: Thank You -->
-        <div class="slide" id="slide-15">
-            <div class="slide-content">
                 <div class="thank-you-section">
-                    <h1>Thank You! 🙏</h1>
+                    <h1><i class="fas fa-handshake"></i> Let's Build the Utopia 🤝</h1>
                     <div class="contact-info">
-                        <h3>Let's Build the Future of AI + Web3 Together</h3>
+                        <h3>Join Us in Democratizing Crypto Trading 🌍</h3>
                         <div class="contact-details">
                             <p><i class="fas fa-envelope"></i> contact@aicryptopia.com</p>
                             <p><i class="fas fa-globe"></i> www.aicryptopia.com</p>
                             <p><i class="fab fa-twitter"></i> @AICryptopia</p>
                         </div>
                         <div class="cta-section">
-                            <p class="cta-text">🚀 Ready to join the AI + Web3 revolution?</p>
-                            <p class="cta-subtext">💰 Let's create 100x returns together! 💎</p>
+                            <p class="cta-text">🚀 Ready to build the user-first utopia?</p>
+                            <p class="cta-subtext">💰 Free knowledge → Joyful utilities → 100x returns! 💎</p>
                         </div>
                     </div>
                 </div>
@@ -346,6 +514,11 @@
         <!-- Progress Bar -->
         <div class="progress-bar">
             <div class="progress-fill" id="progress-fill"></div>
+        </div>
+
+        <!-- Slide Indicators -->
+        <div class="slide-indicators" id="slide-indicators">
+            <!-- Generated by JavaScript -->
         </div>
     </div>
 
