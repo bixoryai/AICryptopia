@@ -2136,4 +2136,401 @@ li::before {
     .pyramid-container text {
         font-size: 8px;
     }
+    
+    /* Orbital Ecosystem Mobile Styles */
+    .orbital-ecosystem {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+        position: relative;
+    }
+    
+    .central-core {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin-bottom: 30px;
+        min-width: auto;
+        max-width: 300px;
+    }
+    
+    .central-core h2 {
+        font-size: 1.4rem;
+    }
+    
+    .orbital-component {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        transform: none;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+    
+    .component-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .component-icon {
+        font-size: 2rem;
+    }
+    
+    .task-examples-mini {
+        margin-top: 10px;
+        gap: 6px;
+    }
+    
+    .task-mini {
+        padding: 6px 8px;
+        font-size: 0.8rem;
+    }
+    
+    .aic-flow-lines {
+        display: none;
+    }
+    
+    .ownership-banner {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        margin-top: 20px;
+        max-width: 100%;
+    }
+}
+
+
+
+/* Orbital Ecosystem Styles */
+.orbital-ecosystem {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Central Core - Dead Center */
+.central-core {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%);
+    border: 4px solid #00ffff;
+    border-radius: 50%;
+    padding: 30px;
+    text-align: center;
+    width: 280px;
+    height: 280px;
+    box-shadow: 0 0 50px rgba(0, 255, 255, 0.5), inset 0 0 30px rgba(0, 255, 255, 0.1);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+
+.hub-icon {
+    font-size: 2.8rem;
+    margin-bottom: 12px;
+}
+
+.central-core h2 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: #00ffff;
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+    line-height: 1.2;
+}
+
+.hub-tagline {
+    font-size: 0.85rem;
+    color: #cccccc;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.aic-core-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: rgba(0, 255, 255, 0.1);
+    padding: 8px 16px;
+    border-radius: 15px;
+    border: 1px solid #00ffff;
+}
+
+.token-symbol {
+    font-weight: bold;
+    color: #00ffff;
+    font-size: 1.1rem;
+}
+
+.flow-text {
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+/* Orbital Components Positioning */
+.orbital-component {
+    position: absolute;
+    z-index: 5;
+    width: 280px;
+}
+
+.knowledge-orbital {
+    top: 5%;
+    left: 5%;
+}
+
+.trading-orbital {
+    top: 5%;
+    right: 5%;
+}
+
+.community-orbital {
+    bottom: -45%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.component-card {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(26, 26, 46, 0.9) 100%);
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 16px;
+    transition: all 0.3s ease;
+    position: relative;
+    backdrop-filter: blur(10px);
+    height: 320px;
+}
+
+.component-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.knowledge-component {
+    border-color: #00ffff;
+}
+
+.knowledge-component:hover {
+    box-shadow: 0 10px 30px rgba(0, 255, 255, 0.3);
+}
+
+.trading-component {
+    border-color: #ff00ff;
+}
+
+.trading-component:hover {
+    box-shadow: 0 10px 30px rgba(255, 0, 255, 0.3);
+}
+
+.community-component {
+    border-color: #00ff00;
+}
+
+.community-component:hover {
+    box-shadow: 0 10px 30px rgba(0, 255, 0, 0.3);
+}
+
+.component-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.component-icon {
+    font-size: 2rem;
+}
+
+.component-header h3 {
+    font-size: 1.1rem;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.component-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.component-features li {
+    padding: 4px 0;
+    padding-left: 20px;
+    position: relative;
+    color: #cccccc;
+    font-size: 0.85rem;
+    line-height: 1.2;
+}
+
+.component-features li::before {
+    content: "▶";
+    position: absolute;
+    left: 0;
+    color: inherit;
+}
+
+.knowledge-component .component-features li::before {
+    color: #00ffff;
+}
+
+.trading-component .component-features li::before {
+    color: #ff00ff;
+}
+
+.community-component .component-features li::before {
+    color: #00ff00;
+}
+
+/* Mini Task Examples */
+.task-examples-mini {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.task-mini {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    line-height: 1.1;
+}
+
+.task-mini:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(0, 255, 255, 0.3);
+}
+
+.task-mini span {
+    font-weight: bold;
+    color: #00ffff;
+    font-size: 0.7rem;
+}
+
+/* Task Rewards Section */
+.task-rewards-section {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid #333333;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.task-rewards-section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00ffff;
+    font-size: 1.4rem;
+}
+
+.task-examples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.task-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #00ffff;
+}
+
+.task-icon {
+    font-size: 1.2rem;
+    min-width: 20px;
+}
+
+.task-desc {
+    flex: 1;
+    color: #cccccc;
+    font-size: 0.9rem;
+}
+
+.task-reward {
+    font-weight: bold;
+    color: #00ffff;
+    font-size: 0.9rem;
+}
+
+.ownership-message {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(45deg, rgba(0, 255, 255, 0.1), rgba(255, 0, 255, 0.1));
+    border-radius: 10px;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+}
+
+.ownership-message p {
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+/* $AIC Flow Lines */
+.aic-flow-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.orbital-svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Ownership Banner */
+.ownership-banner {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(45deg, rgba(0, 255, 255, 0.1), rgba(255, 0, 255, 0.1));
+    border: 2px solid rgba(0, 255, 255, 0.4);
+    border-radius: 15px;
+    padding: 10px 20px;
+    text-align: center;
+    max-width: 450px;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+}
+
+.ownership-banner p {
+    font-size: 0.9rem;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 } 

@@ -25,7 +25,7 @@ AICryptopia is a **User-First Utopia** platform democratizing access to AI + Web
 ```
 AICryptopia/
 ├── decks/investor/          # Main investor presentation
-│   ├── index.html          # 14-slide interactive presentation
+│   ├── index.html          # 15-slide interactive presentation
 │   ├── css/styles.css      # Dark theme, neon effects, responsive design
 │   ├── js/scripts.js       # Navigation, charts, interactivity
 │   └── assets/             # (Future: images, logos)
@@ -95,10 +95,29 @@ AICryptopia/
 - **New Slide 5:** "What We Build" - technical roadmap moved after value establishment
 - **Improved Flow:** Problem → Solution → **User Value** → Implementation (classic pitch structure)
 
+#### **Slide 5: Complete Orbital Ecosystem Redesign**
+- **Vision Transformation:** Changed from linear development timeline to component-focused orbital design
+- **Central Hub Design:** Circular "User-Owned AI Cryptopia" hub with $AIC token branding
+  - **Professional Styling:** Perfect circle with radial gradient and enhanced glow effects
+  - **Clear Messaging:** "Community-driven wealth building platform" with "$AIC Powers Everything"
+- **Three Orbital Components:** Positioned around central hub with proper spacing
+  - **📚 Crypto Knowledge Nexus:** AI-curated learning, community verification, real-time insights
+  - **🤖 AI-Powered Trading Tools:** Intelligent bots, market analysis, risk management
+  - **🏘️ Community Ecosystem:** User governance, collaborative strategies, challenges
+- **$AIC Token Flow Visualization:** Animated spoke lines connecting center to each component
+  - **Dynamic Animation:** Moving $AIC tokens flow along dashed lines (cyan, magenta, green)
+  - **Clear Labels:** $AIC text positioned on each spoke line for token economics clarity
+- **Task-Based Rewards Integration:** Mini examples within each component showing specific $AIC earning opportunities
+  - **Knowledge:** +50 $AIC for guides, +25 $AIC for verification
+  - **Trading:** +30 $AIC for insights, +20 $AIC for feedback
+  - **Community:** +10 $AIC for help, +20 $AIC for governance
+- **User Ownership Messaging:** "True Ownership: Users build, own, and profit from AI Cryptopia together"
+- **Slide Count Update:** Added new Slide 6 "Development Plan" with original timeline content
+
 #### **Content Updates**
 - **Title Slide:** Updated to "AI Cryptopia" with punchy tagline and CTA
 - **Team Consolidation:** Merged separate team slides into comprehensive "Team & Funding"
-- **Slide Count:** Reduced from 15 to 14 slides for better flow
+- **Slide Count:** Now 15 slides total (added Development Plan slide after What We Build redesign)
 
 ### 🎯 Core Presentation Features
 
@@ -120,10 +139,11 @@ AICryptopia/
 - **Slide 2:** Market growth opportunity chart (radial layout with 4 quadrant cards)
 - **Slide 3:** Problem→Solution sequential pairs with branded AIC badges
 - **Slide 4:** "Crypto Gold Rush" value proposition cards with themed styling
-- **Slide 5:** Development phases bar chart (moved from Slide 4)
-- **Slide 6:** Growth projections line chart
-- **Slide 8:** ROI potential curve
-- **Slide 10:** Fund allocation pie chart
+- **Slide 5:** Orbital ecosystem design with animated $AIC token flows (central hub + 3 components)
+- **Slide 6:** Development phases visualization (pyramid design with timeline)
+- **Slide 7:** Growth projections line chart
+- **Slide 9:** ROI potential curve
+- **Slide 11:** Fund allocation pie chart
 
 ---
 
@@ -226,15 +246,15 @@ AICryptopia/
 
 ## 📋 File-by-File Breakdown
 
-### **`decks/investor/index.html`** (590+ lines)
+### **`decks/investor/index.html`** (850+ lines)
 - **Purpose:** Main presentation HTML structure
-- **Key Sections:** 14 slides, navigation controls, sidebar, CDN links
-- **Recent Changes:** Slide 2 radial layout, Slide 3 sequential pairs, AIC branding badges, sidebar implementation, title updates
+- **Key Sections:** 15 slides, navigation controls, sidebar, CDN links
+- **Recent Changes:** Slide 5 orbital ecosystem redesign, task-based rewards integration, $AIC token flow animations, Development Plan slide addition
 
 ### **`decks/investor/css/styles.css`**
 - **Purpose:** Complete styling and responsive design
 - **Key Features:** Dark theme, animations, responsive breakpoints
-- **Recent Changes:** Radial layout styles, sequential pairs layout, AIC branding badges, scrollable content, sidebar styling
+- **Recent Changes:** Orbital ecosystem styles, circular central hub design, component positioning, $AIC flow animations, responsive orbital layout
 
 ### **`decks/investor/js/scripts.js`**
 - **Purpose:** All interactive functionality
@@ -252,12 +272,14 @@ AICryptopia/
 ## 🎯 Current Status & Next Steps
 
 ### **✅ Completed**
-- ✅ Full 14-slide interactive presentation
+- ✅ Full 15-slide interactive presentation
 - ✅ GitHub Pages deployment with custom domain
 - ✅ Responsive design (desktop, tablet, mobile)
 - ✅ Advanced navigation (sidebar, indicators, keyboard shortcuts)
 - ✅ Slide 2 radial layout transformation with 4 quadrant cards
 - ✅ Slide 3 sequential problem→solution pairs with AIC branding
+- ✅ Slide 5 orbital ecosystem redesign with central hub and animated $AIC flows
+- ✅ Task-based tokenomics visualization integrated into platform components
 - ✅ Content refinement for current market context
 - ✅ Scroll functionality fixes
 - ✅ Visual polish and UX improvements
@@ -351,15 +373,17 @@ AICryptopia/
 - Consider this the "source of truth" for project state and context
 
 **🔥 Latest Session Highlights:**
-- **Strategic Slide Swap:** Reordered Slides 4 & 5 for optimal pitch flow (Problem → Solution → Value → Implementation)
-- **"Crypto Gold Rush" Positioning:** Transformed Slide 4 into powerful opportunity positioning with market timing context
-- **Value Cards Enhancement:** Applied Slide 3's successful card design to value propositions with themed styling
-- **Professional Messaging:** Sophisticated integration of "gold rush" opportunity without hype-driven language
-- **Visual Consistency:** Maintained design language across slides with center-aligned headers and responsive layouts
-- **Slide 3 Major Redesign:** Transformed from 8-card cognitive overload to clean 4-pair sequential layout
-- **Enhanced Narrative Flow:** Direct problem→solution mapping with improved investor comprehension
-- **Brand Integration:** Added subtle AIC badges to establish clear solution ownership
+- **Orbital Ecosystem Design:** Complete Slide 5 transformation from linear timeline to hub-and-spoke orbital layout
+- **Central Hub Innovation:** Circular "User-Owned AI Cryptopia" core with perfect circle design and $AIC branding
+- **Component-Focused Architecture:** Three orbital components (Knowledge Nexus, Trading Tools, Community) with clear positioning
+- **$AIC Token Flow Visualization:** Animated spoke lines with moving tokens demonstrating platform tokenomics
+- **Task-Based Rewards Integration:** Specific $AIC earning examples within each component (+10 to +50 $AIC ranges)
+- **User Ownership Messaging:** "True Ownership" concept visualization showing community-driven platform
+- **Development Plan Separation:** Moved timeline content to new Slide 6 for better narrative structure
+- **Enhanced Navigation:** Updated slide count and sidebar for 15-slide presentation
+- **Responsive Orbital Design:** Mobile-friendly layout with proper component spacing and positioning
+- **Professional Presentation Polish:** Resolved pagination overlap issues and optimized component text sizing
 
 ---
 
-*Last reviewed and updated: January 2025 - Post Slide 4/5 Swap & Gold Rush Integration* 
+*Last reviewed and updated: January 2025 - Post Orbital Ecosystem Design & Task-Based Tokenomics Integration* 
