@@ -745,6 +745,148 @@ li::before {
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
 }
 
+/* Value Cards Layout (Slide 4) */
+.value-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.value-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: visible;
+    min-height: 200px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 255, 255, 0.2);
+}
+
+.knowledge-value {
+    border-color: rgba(0, 255, 255, 0.3);
+}
+
+.knowledge-value:hover {
+    border-color: #00ffff;
+    box-shadow: 0 10px 30px rgba(0, 255, 255, 0.3);
+}
+
+.intelligence-value {
+    border-color: rgba(255, 0, 255, 0.3);
+}
+
+.intelligence-value:hover {
+    border-color: #ff00ff;
+    box-shadow: 0 10px 30px rgba(255, 0, 255, 0.3);
+}
+
+.trust-value {
+    border-color: rgba(0, 255, 0, 0.3);
+}
+
+.trust-value:hover {
+    border-color: #00ff00;
+    box-shadow: 0 10px 30px rgba(0, 255, 0, 0.3);
+}
+
+.user-first-value {
+    border-color: rgba(255, 215, 0, 0.3);
+}
+
+.user-first-value:hover {
+    border-color: #ffd700;
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+}
+
+.value-card .card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.value-card .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.value-card .card-highlight {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(0, 255, 255, 0.2);
+    color: #88ffff;
+    border: 1px solid rgba(0, 255, 255, 0.4);
+}
+
+.intelligence-value .card-highlight {
+    background: rgba(255, 0, 255, 0.2);
+    color: #ff88ff;
+    border: 1px solid rgba(255, 0, 255, 0.4);
+}
+
+.trust-value .card-highlight {
+    background: rgba(0, 255, 0, 0.2);
+    color: #88ff88;
+    border: 1px solid rgba(0, 255, 0, 0.4);
+}
+
+.user-first-value .card-highlight {
+    background: rgba(255, 215, 0, 0.2);
+    color: #ffdd88;
+    border: 1px solid rgba(255, 215, 0, 0.4);
+}
+
+.value-card .card-description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #cccccc;
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+/* Gold Rush Context Subtitle */
+.gold-rush-context {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #ffdd88;
+    margin: 1rem 0 2rem 0;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 0 0 10px rgba(255, 221, 136, 0.3);
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 165, 0, 0.1));
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 15px;
+    padding: 1rem 1.5rem;
+    backdrop-filter: blur(5px);
+}
+
+/* Center-align section titles in Slide 4 */
+.user-value h3,
+.uniqueness h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
 /* Comparison Table */
 .comparison-table {
     width: 100%;
@@ -939,12 +1081,46 @@ li::before {
         margin: 0.3rem 0;
     }
     
+    .value-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+    
+    .value-card {
+        min-height: 170px;
+        padding: 1.6rem;
+    }
+    
     .solution-badge {
         font-size: 0.6rem;
         padding: 0.25rem 0.5rem;
         border-radius: 10px;
         top: -6px;
         right: -6px;
+    }
+    
+    .value-cards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .value-card {
+        min-height: 160px;
+        padding: 1.5rem;
+    }
+    
+    .value-card .card-icon {
+        font-size: 2rem;
+    }
+    
+    .value-card .card-title {
+        font-size: 1.1rem;
+    }
+    
+    .gold-rush-context {
+        font-size: 1rem;
+        padding: 0.8rem 1.2rem;
+        margin: 0.8rem 0 1.5rem 0;
     }
     
     .slide-content.scrollable {
