@@ -1107,7 +1107,7 @@ const translations = {
         'sidebar-title': '幻灯片索引',
         
         // Slide Titles
-        'slide-1-title': 'AI加密乌托邦 - 财富之门',
+        'slide-1-title': 'AI加密乐园 - 财富之门',
         'slide-2-title': '市场机遇',
         'slide-3-title': '问题与解决方案',
         'slide-4-title': '以用户为中心的价值主张',
@@ -1123,7 +1123,7 @@ const translations = {
         'slide-14-title': '您的世代财富邀请函',
         
         // Main Titles
-        'main-title': 'AI加密乌托邦',
+        'main-title': 'AI加密乐园',
         'main-tagline': '您在AI + Web3领域财富建设的快乐门户',
         'main-subtitle': '用去中心化AI普及世代财富获取',
         'prepared-by': '制作方：AICryptopia团队',
@@ -1272,7 +1272,7 @@ const translations = {
         'what-we-build-title': '我们构建什么 🏗️',
         
         // Central Hub
-        'central-hub-title': '用户拥有的AI加密乌托邦',
+        'central-hub-title': '用户拥有的AI加密乐园',
         'central-hub-tagline': '社区驱动的财富建设平台',
         'central-hub-flow-text': '驱动一切',
         
@@ -1304,7 +1304,7 @@ const translations = {
         'community-task-2': '🗳️ 治理',
         
         // Ownership Banner
-        'ownership-banner': '💎 真正的所有权：用户共同建设、拥有并从AI加密乌托邦中获利',
+        'ownership-banner': '💎 真正的所有权：用户共同建设、拥有并从AI加密乐园中获利',
         
         // Slide 6 Content
         'staged-development-title': '分阶段开源开发 ⏳',
