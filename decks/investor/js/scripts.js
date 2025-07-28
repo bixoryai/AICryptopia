@@ -174,7 +174,7 @@ function initializeSlideCharts(slideNumber) {
         case 4:
             initializeBuildChart();
             break;
-        case 6:
+        case 7:
             initializeGrowthChart();
             break;
         case 8:
@@ -342,7 +342,7 @@ function initializeBuildChart() {
     });
 }
 
-// Slide 6: Growth Chart (Revenue Growth)
+// Slide 7: Growth Chart (3-Stage Revenue Progression)
 function initializeGrowthChart() {
     const ctx = document.getElementById('growthChart');
     if (!ctx || charts.growthChart) return;
@@ -350,41 +350,77 @@ function initializeGrowthChart() {
     charts.growthChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: ['Y1 (MVP)', 'Y2 (Scale)', 'Y3 (Growth)', 'Y5 (Mature)'],
-            datasets: [{
-                label: 'Revenue ($M)',
-                data: [0, 0.5, 5, 50],
-                borderColor: '#00ff00',
-                backgroundColor: 'rgba(0, 255, 0, 0.2)',
-                fill: true,
-                tension: 0.4,
-                pointBackgroundColor: '#00ff00',
-                pointBorderColor: '#ffffff',
-                pointBorderWidth: 2,
-                pointRadius: 6
-            }]
+            labels: ['Stage 1: Traffic', 'Stage 2: Utility', 'Stage 3: Tokenomics', 'Year 3+'],
+            datasets: [
+                {
+                    label: 'Traffic Revenue',
+                    data: [0.2, 0.3, 0.3, 0.3],
+                    borderColor: '#ffa500',
+                    backgroundColor: 'rgba(255, 165, 0, 0.2)',
+                    fill: false,
+                    tension: 0.4,
+                    pointBackgroundColor: '#ffa500',
+                    pointBorderColor: '#ffffff',
+                    pointBorderWidth: 2,
+                    pointRadius: 6
+                },
+                {
+                    label: 'Utility Revenue',
+                    data: [0, 1, 5, 8],
+                    borderColor: '#00ffff',
+                    backgroundColor: 'rgba(0, 255, 255, 0.2)',
+                    fill: false,
+                    tension: 0.4,
+                    pointBackgroundColor: '#00ffff',
+                    pointBorderColor: '#ffffff',
+                    pointBorderWidth: 2,
+                    pointRadius: 6
+                },
+                {
+                    label: 'Total Platform Value',
+                    data: [0.2, 1.3, 15, 100],
+                    borderColor: '#ffd700',
+                    backgroundColor: 'rgba(255, 215, 0, 0.1)',
+                    fill: true,
+                    tension: 0.4,
+                    pointBackgroundColor: '#ffd700',
+                    pointBorderColor: '#ffffff',
+                    pointBorderWidth: 3,
+                    pointRadius: 8
+                }
+            ]
         },
         options: {
             responsive: true,
             maintainAspectRatio: false,
             plugins: {
                 legend: {
-                    labels: { color: '#ffffff', font: { size: 14 } }
+                    labels: { 
+                        color: '#ffffff', 
+                        font: { size: 12 },
+                        padding: 15
+                    }
                 },
                 title: {
                     display: true,
-                    text: 'Revenue Growth from Joyful Pay Model',
+                    text: '3-Stage Revenue Progression: Traffic → Utility → Tokenomics Wealth',
                     color: '#00ffff',
-                    font: { size: 16, weight: 'bold' }
+                    font: { size: 14, weight: 'bold' }
                 }
             },
             scales: {
-                x: { ticks: { color: '#ffffff' }, grid: { color: 'rgba(255, 255, 255, 0.1)' } },
+                x: { 
+                    ticks: { color: '#ffffff', font: { size: 11 } }, 
+                    grid: { color: 'rgba(255, 255, 255, 0.1)' } 
+                },
                 y: { 
                     beginAtZero: true,
                     ticks: { 
                         color: '#ffffff',
-                        callback: function(value) { return '$' + value + 'M'; }
+                        font: { size: 11 },
+                        callback: function(value) { 
+                            return value >= 1 ? '$' + value + 'M' : '$' + (value * 1000) + 'K'; 
+                        }
                     },
                     grid: { color: 'rgba(255, 255, 255, 0.1)' }
                 }
