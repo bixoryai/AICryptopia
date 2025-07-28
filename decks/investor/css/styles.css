@@ -1624,6 +1624,232 @@ li::before {
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
 }
 
+/* Enhanced Team & Funding Section */
+.funding-section-enhanced {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.funding-header {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(0, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+.funding-subtitle {
+    color: #cccccc;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+.funding-allocation-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.funding-breakdown-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.allocation-card {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    padding: 1.2rem;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: 2px solid;
+}
+
+.allocation-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.development-allocation {
+    border-color: rgba(0, 255, 255, 0.5);
+}
+
+.marketing-allocation {
+    border-color: rgba(255, 0, 255, 0.5);
+}
+
+.operations-allocation {
+    border-color: rgba(255, 165, 0, 0.5);
+}
+
+.reserve-allocation {
+    border-color: rgba(0, 255, 0, 0.5);
+}
+
+.allocation-icon {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.allocation-content h4 {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.allocation-highlight {
+    background: rgba(255, 215, 0, 0.2);
+    color: #ffd700;
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    display: inline-block;
+}
+
+.allocation-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.allocation-details li {
+    color: #cccccc;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin-bottom: 0.3rem;
+    padding-left: 0.5rem;
+}
+
+.funding-chart-section {
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-radius: 15px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chart-header-compact {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.chart-header-compact h4 {
+    color: #ffd700;
+    margin-bottom: 0.3rem;
+}
+
+.chart-header-compact p {
+    color: #cccccc;
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.chart-container-enhanced {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 1rem;
+}
+
+.funding-milestones {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+}
+
+.milestone-target {
+    background: rgba(0, 255, 0, 0.1);
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    border-radius: 8px;
+    padding: 0.6rem;
+    text-align: center;
+}
+
+.milestone-label {
+    color: #00ff00;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.milestone-value {
+    color: #ffffff;
+    font-size: 0.85rem;
+}
+
+.funding-strategy-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 255, 0, 0.2);
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+.strategy-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    border-radius: 10px;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.strategy-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+}
+
+.strategy-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.strategy-content h5 {
+    color: #00ff00;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.strategy-content p {
+    color: #cccccc;
+    font-size: 0.8rem;
+    line-height: 1.3;
+    margin: 0;
+}
+
+/* Enhanced Funding Responsive Design */
+@media (max-width: 768px) {
+    .funding-allocation-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .funding-breakdown-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .funding-strategy-summary {
+        grid-template-columns: 1fr;
+    }
+    
+    .strategy-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 /* Radial Opportunity Layout */
 .opportunity-layout-radial {
     display: grid;
