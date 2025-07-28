@@ -3281,3 +3281,449 @@ li::before {
         gap: 0.8rem;
     }
 }
+
+/* ============================================
+   SLIDE 8: $AIC TOKENOMICS TO THE MOON STYLES
+   ============================================ */
+
+/* Tokenomics Layout Container */
+.tokenomics-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tokenomics Header */
+.tokenomics-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.tokenomics-header h3 {
+    font-size: 1.8rem;
+    background: linear-gradient(45deg, #ffd700, #ffed4e, #ffd700);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 3s ease-in-out infinite;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
+}
+
+.tokenomics-subtitle {
+    font-size: 1rem;
+    color: #cccccc;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Core Tokenomics Mechanics Section */
+.tokenomics-mechanics-section {
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-radius: 20px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.mechanics-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.mechanics-header h4 {
+    color: #ffd700;
+    font-size: 1.4rem;
+    margin: 0 0 0.5rem 0;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.mechanics-header p {
+    color: #cccccc;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.mechanics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.mechanic-card {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.mechanic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+}
+
+.burn-mechanic {
+    border: 2px solid rgba(255, 69, 0, 0.4);
+}
+
+.burn-mechanic:hover {
+    box-shadow: 0 0 30px rgba(255, 69, 0, 0.3);
+}
+
+.utility-mechanic {
+    border: 2px solid rgba(0, 255, 255, 0.4);
+}
+
+.utility-mechanic:hover {
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+}
+
+.growth-mechanic {
+    border: 2px solid rgba(0, 255, 0, 0.4);
+}
+
+.growth-mechanic:hover {
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.3);
+}
+
+.wealth-mechanic {
+    border: 2px solid rgba(255, 215, 0, 0.4);
+}
+
+.mechanic-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.mechanic-card h5 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.mechanic-highlight {
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.burn-mechanic .mechanic-highlight {
+    background: rgba(255, 69, 0, 0.2);
+    color: #ff4500;
+    border: 1px solid rgba(255, 69, 0, 0.4);
+}
+
+.utility-mechanic .mechanic-highlight {
+    background: rgba(0, 255, 255, 0.2);
+    color: #00ffff;
+    border: 1px solid rgba(0, 255, 255, 0.4);
+}
+
+.growth-mechanic .mechanic-highlight {
+    background: rgba(0, 255, 0, 0.2);
+    color: #00ff00;
+    border: 1px solid rgba(0, 255, 0, 0.4);
+}
+
+.wealth-mechanic .mechanic-highlight {
+    background: rgba(255, 215, 0, 0.2);
+    color: #ffd700;
+    border: 1px solid rgba(255, 215, 0, 0.4);
+}
+
+.mechanic-details {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.mechanic-details li {
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+/* Value Comparison Section */
+.value-comparison-section {
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.comparison-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.comparison-header h4 {
+    color: #00ffff;
+    font-size: 1.4rem;
+    margin: 0 0 0.5rem 0;
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.comparison-header p {
+    color: #cccccc;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.comparison-table-container {
+    overflow-x: auto;
+}
+
+.tokenomics-comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tokenomics-comparison-table th {
+    background: rgba(0, 255, 255, 0.1);
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid rgba(0, 255, 255, 0.3);
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+.aic-column {
+    background: rgba(0, 255, 0, 0.1) !important;
+    color: #00ff00 !important;
+}
+
+.others-column {
+    background: rgba(255, 0, 0, 0.1) !important;
+    color: #ff6666 !important;
+}
+
+.tokenomics-comparison-table td {
+    padding: 0.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+}
+
+.tokenomics-comparison-table td:first-child {
+    color: #ffffff;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.aic-cell {
+    color: #00ff00;
+    text-align: center;
+    background: rgba(0, 255, 0, 0.05);
+}
+
+.others-cell {
+    color: #ff6666;
+    text-align: center;
+    background: rgba(255, 0, 0, 0.05);
+}
+
+/* Wealth Trajectory Section */
+.wealth-trajectory-section {
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 0, 255, 0.3);
+    border-radius: 20px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.trajectory-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.trajectory-header h4 {
+    color: #ff00ff;
+    font-size: 1.4rem;
+    margin: 0 0 0.5rem 0;
+    text-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+}
+
+.trajectory-header p {
+    color: #cccccc;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.trajectory-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.trajectory-chart-container {
+    display: flex;
+    justify-content: center;
+}
+
+.trajectory-milestones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.milestone-card {
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(255, 215, 0, 0.4);
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.milestone-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
+}
+
+.milestone-year {
+    color: #cccccc;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.milestone-growth {
+    color: #ffd700;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+    margin-bottom: 0.5rem;
+}
+
+.milestone-driver {
+    color: #e0e0e0;
+    font-size: 0.85rem;
+    line-height: 1.3;
+}
+
+/* Investment Thesis Section */
+.investment-thesis-section {
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 255, 0, 0.3);
+    border-radius: 20px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.thesis-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.thesis-header h4 {
+    color: #00ff00;
+    font-size: 1.4rem;
+    margin: 0;
+    text-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+}
+
+.thesis-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.thesis-point {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.thesis-point:hover {
+    border-color: rgba(0, 255, 0, 0.6);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.thesis-icon {
+    font-size: 1.8rem;
+    min-width: 40px;
+    text-align: center;
+}
+
+.thesis-content h5 {
+    color: #00ff00;
+    font-size: 1rem;
+    margin: 0 0 0.5rem 0;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.thesis-content p {
+    color: #e0e0e0;
+    font-size: 0.85rem;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Mobile Responsive Design for Tokenomics */
+@media (max-width: 768px) {
+    .tokenomics-layout {
+        padding: 0.5rem;
+        gap: 2rem;
+    }
+    
+    .tokenomics-header h3 {
+        font-size: 1.5rem;
+    }
+    
+    .tokenomics-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .mechanics-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .mechanic-card {
+        padding: 1.2rem;
+    }
+    
+    .trajectory-content {
+        flex-direction: column;
+    }
+    
+    .trajectory-milestones {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .thesis-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .thesis-point {
+        padding: 1.2rem;
+    }
+    
+    .comparison-table-container {
+        font-size: 0.8rem;
+    }
+}

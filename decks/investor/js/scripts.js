@@ -429,7 +429,7 @@ function initializeGrowthChart() {
     });
 }
 
-// Slide 8: ROI Chart (100x Return Projection)
+// Slide 8: $AIC Tokenomics To The Moon Chart
 function initializeROIChart() {
     const ctx = document.getElementById('roiChart');
     if (!ctx || charts.roiChart) return;
@@ -437,41 +437,77 @@ function initializeROIChart() {
     charts.roiChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: ['Entry', 'Y1', 'Y2', 'Y3 Target'],
-            datasets: [{
-                label: '$AIC Token Multiple',
-                data: [1, 5, 25, 100],
-                borderColor: '#ff00ff',
-                backgroundColor: 'rgba(255, 0, 255, 0.2)',
-                fill: true,
-                tension: 0.3,
-                pointBackgroundColor: '#ff00ff',
-                pointBorderColor: '#ffffff',
-                pointBorderWidth: 3,
-                pointRadius: 8
-            }]
+            labels: ['Launch', '6M (Utility)', '1Y (Burns)', '2Y (Growth)', '3Y (Moon)'],
+            datasets: [
+                {
+                    label: '$AIC Token Value',
+                    data: [1, 8, 25, 60, 100],
+                    borderColor: '#ffd700',
+                    backgroundColor: 'rgba(255, 215, 0, 0.2)',
+                    fill: true,
+                    tension: 0.4,
+                    pointBackgroundColor: '#ffd700',
+                    pointBorderColor: '#ffffff',
+                    pointBorderWidth: 3,
+                    pointRadius: 10
+                },
+                {
+                    label: 'Platform Revenue Impact',
+                    data: [0, 2, 8, 25, 50],
+                    borderColor: '#00ffff',
+                    backgroundColor: 'rgba(0, 255, 255, 0.1)',
+                    fill: false,
+                    tension: 0.4,
+                    pointBackgroundColor: '#00ffff',
+                    pointBorderColor: '#ffffff',
+                    pointBorderWidth: 2,
+                    pointRadius: 6
+                },
+                {
+                    label: 'Token Burns & Scarcity',
+                    data: [0, 1, 5, 15, 35],
+                    borderColor: '#ff4500',
+                    backgroundColor: 'rgba(255, 69, 0, 0.1)',
+                    fill: false,
+                    tension: 0.4,
+                    pointBackgroundColor: '#ff4500',
+                    pointBorderColor: '#ffffff',
+                    pointBorderWidth: 2,
+                    pointRadius: 6
+                }
+            ]
         },
         options: {
             responsive: true,
             maintainAspectRatio: false,
             plugins: {
                 legend: {
-                    labels: { color: '#ffffff', font: { size: 14 } }
+                    labels: { 
+                        color: '#ffffff', 
+                        font: { size: 12 },
+                        padding: 15
+                    }
                 },
                 title: {
                     display: true,
-                    text: '100x ROI Target ($TAO Benchmark: 1000x)',
-                    color: '#ff00ff',
-                    font: { size: 16, weight: 'bold' }
+                    text: '🚀 $AIC "To The Moon" Trajectory: Conservative 100x Target',
+                    color: '#ffd700',
+                    font: { size: 14, weight: 'bold' }
                 }
             },
             scales: {
-                x: { ticks: { color: '#ffffff' }, grid: { color: 'rgba(255, 255, 255, 0.1)' } },
+                x: { 
+                    ticks: { color: '#ffffff', font: { size: 11 } }, 
+                    grid: { color: 'rgba(255, 255, 255, 0.1)' } 
+                },
                 y: { 
                     beginAtZero: true,
                     ticks: { 
                         color: '#ffffff',
-                        callback: function(value) { return value + 'x'; }
+                        font: { size: 11 },
+                        callback: function(value) { 
+                            return value === 0 ? '1x' : value + 'x'; 
+                        }
                     },
                     grid: { color: 'rgba(255, 255, 255, 0.1)' }
                 }
