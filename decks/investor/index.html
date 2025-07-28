@@ -22,7 +22,7 @@
         <!-- Sidebar with Slide Index -->
         <div class="sidebar" id="slide-sidebar">
             <div class="sidebar-header">
-                <h3><i class="fas fa-list"></i> Slide Index</h3>
+                <h3><i class="fas fa-list"></i> <span data-translate="sidebar-title">Slide Index</span></h3>
                 <button class="sidebar-close" onclick="toggleSidebar()">
                     <i class="fas fa-times"></i>
                 </button>
@@ -31,59 +31,59 @@
                 <ul class="slide-index" id="slide-index">
                     <li class="index-item active" data-slide="1" onclick="goToSlide(1)">
                         <span class="slide-number">01</span>
-                        <span class="slide-title">AI Cryptopia - Gateway to Wealth</span>
+                        <span class="slide-title" data-translate="slide-1-title">AI Cryptopia - Gateway to Wealth</span>
                     </li>
                     <li class="index-item" data-slide="2" onclick="goToSlide(2)">
                         <span class="slide-number">02</span>
-                        <span class="slide-title">Market Opportunity</span>
+                        <span class="slide-title" data-translate="slide-2-title">Market Opportunity</span>
                     </li>
                     <li class="index-item" data-slide="3" onclick="goToSlide(3)">
                         <span class="slide-number">03</span>
-                        <span class="slide-title">Problem & Solution</span>
+                        <span class="slide-title" data-translate="slide-3-title">Problem & Solution</span>
                     </li>
                     <li class="index-item" data-slide="4" onclick="goToSlide(4)">
                         <span class="slide-number">04</span>
-                        <span class="slide-title">User-centric Value Proposition</span>
+                        <span class="slide-title" data-translate="slide-4-title">User-centric Value Proposition</span>
                     </li>
                     <li class="index-item" data-slide="5" onclick="goToSlide(5)">
                         <span class="slide-number">05</span>
-                        <span class="slide-title">What We Build</span>
+                        <span class="slide-title" data-translate="slide-5-title">What We Build</span>
                     </li>
                     <li class="index-item" data-slide="6" onclick="goToSlide(6)">
                         <span class="slide-number">06</span>
-                        <span class="slide-title">Staged Open-source Development</span>
+                        <span class="slide-title" data-translate="slide-6-title">Staged Open-source Development</span>
                     </li>
                     <li class="index-item" data-slide="7" onclick="goToSlide(7)">
                         <span class="slide-number">07</span>
-                        <span class="slide-title">Growth & Earning Potential</span>
+                        <span class="slide-title" data-translate="slide-7-title">Growth & Earning Potential</span>
                     </li>
                     <li class="index-item" data-slide="8" onclick="goToSlide(8)">
                         <span class="slide-number">08</span>
-                        <span class="slide-title">$AIC Tokenomics To The Moon</span>
+                        <span class="slide-title" data-translate="slide-8-title">$AIC Tokenomics To The Moon</span>
                     </li>
                     <li class="index-item" data-slide="9" onclick="goToSlide(9)">
                         <span class="slide-number">09</span>
-                        <span class="slide-title">Competitive Challenges & Risks</span>
+                        <span class="slide-title" data-translate="slide-9-title">Competitive Challenges & Risks</span>
                     </li>
                     <li class="index-item" data-slide="10" onclick="goToSlide(10)">
                         <span class="slide-number">10</span>
-                        <span class="slide-title">Team & Funding</span>
+                        <span class="slide-title" data-translate="slide-10-title">Team & Funding</span>
                     </li>
                     <li class="index-item" data-slide="11" onclick="goToSlide(11)">
                         <span class="slide-number">11</span>
-                        <span class="slide-title">Market Validation</span>
+                        <span class="slide-title" data-translate="slide-11-title">Market Validation</span>
                     </li>
                     <li class="index-item" data-slide="12" onclick="goToSlide(12)">
                         <span class="slide-number">12</span>
-                        <span class="slide-title">Exit Strategy</span>
+                        <span class="slide-title" data-translate="slide-12-title">Exit Strategy</span>
                     </li>
                     <li class="index-item" data-slide="13" onclick="goToSlide(13)">
                         <span class="slide-number">13</span>
-                        <span class="slide-title">Partnership & Investment Opportunities</span>
+                        <span class="slide-title" data-translate="slide-13-title">Partnership & Investment Opportunities</span>
                     </li>
                     <li class="index-item" data-slide="14" onclick="goToSlide(14)">
                         <span class="slide-number">14</span>
-                        <span class="slide-title">Your Invitation to Generational Wealth</span>
+                        <span class="slide-title" data-translate="slide-14-title">Your Invitation to Generational Wealth</span>
                     </li>
                 </ul>
             </div>
@@ -92,22 +92,30 @@
         <!-- Sidebar Overlay -->
         <div class="sidebar-overlay" id="sidebar-overlay" onclick="closeSidebar()"></div>
 
-        <!-- Navigation Controls -->
-        <div class="nav-controls">
-            <button class="nav-btn home-btn" onclick="goToFirstSlide()" title="Go to Title Slide (Home)">
-                <i class="fas fa-home"></i>
-            </button>
-            <button class="nav-btn prev-btn" onclick="changeSlide(-1)" title="Previous Slide (←)">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-            <span class="slide-counter">
-                <span id="current-slide">1</span> / <span id="total-slides">14</span>
-            </span>
-            <button class="nav-btn next-btn" onclick="changeSlide(1)" title="Next Slide (→)">
-                <i class="fas fa-chevron-right"></i>
-            </button>
-            <button class="nav-btn end-btn" onclick="goToLastSlide()" title="Go to Final Slide (End)">
-                <i class="fas fa-flag-checkered"></i>
+        <!-- Navigation Container -->
+        <div class="navigation-container">
+            <!-- Navigation Controls (Centered) -->
+            <div class="nav-controls">
+                <button class="nav-btn home-btn" onclick="goToFirstSlide()" title="Go to Title Slide (Home)">
+                    <i class="fas fa-home"></i>
+                </button>
+                <button class="nav-btn prev-btn" onclick="changeSlide(-1)" title="Previous Slide (←)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <span class="slide-counter">
+                    <span id="current-slide">1</span> / <span id="total-slides">14</span>
+                </span>
+                <button class="nav-btn next-btn" onclick="changeSlide(1)" title="Next Slide (→)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <button class="nav-btn end-btn" onclick="goToLastSlide()" title="Go to Final Slide (End)">
+                    <i class="fas fa-flag-checkered"></i>
+                </button>
+            </div>
+            
+            <!-- Language Toggle (Right Aligned) -->
+            <button class="language-toggle-btn" id="language-toggle" onclick="toggleLanguage()" title="Switch Language">
+                CH
             </button>
         </div>
 
@@ -125,14 +133,14 @@
                         <line x1="80" y1="40" x2="60" y2="80" stroke="#00ffff" stroke-width="2"/>
                     </svg>
                 </div>
-                <h1 class="title-main">AI Cryptopia</h1>
-                <h1 class="title-tagline">Your Happy Gateway to Wealth Building in AI + Web3 Space</h1>
-                <h2 class="title-sub">Democratizing Access to Generational Wealth with Decentralized AI</h2>
+                <h1 class="title-main" data-translate="main-title">AI Cryptopia</h1>
+                <h1 class="title-tagline" data-translate="main-tagline">Your Happy Gateway to Wealth Building in AI + Web3 Space</h1>
+                <h2 class="title-sub" data-translate="main-subtitle">Democratizing Access to Generational Wealth with Decentralized AI</h2>
                 <div class="title-meta">
-                    <p><i class="fas fa-rocket"></i> 🚀 Prepared by: AICryptopia Team</p>
-                    <p>📅 Date: January 2025</p>
+                    <p><i class="fas fa-rocket"></i> 🚀 <span data-translate="prepared-by">Prepared by: AICryptopia Team</span></p>
+                    <p>📅 <span data-translate="date">Date: January 2025</span></p>
                     <div class="cta-button">
-                        <button class="glow-button">Experience the Crypto Rush Utopia 💎</button>
+                        <button class="glow-button" data-translate="cta-button">Experience the Crypto Rush Utopia 💎</button>
                     </div>
                 </div>
             </div>
@@ -141,66 +149,66 @@
         <!-- Slide 2: The Opportunity -->
         <div class="slide" id="slide-2">
             <div class="slide-content">
-                <h1><i class="fas fa-chart-line"></i> The Opportunity 📈</h1>
+                <h1><i class="fas fa-chart-line"></i> <span data-translate="opportunity-title">The Opportunity 📈</span></h1>
                 <div class="opportunity-layout-radial">
                     <!-- Top Left Quadrant -->
                     <div class="opportunity-card market-card quadrant-top-left">
                         <div class="card-icon">🚀</div>
-                        <h3 class="card-title">Market Outlook</h3>
-                        <div class="card-highlight">Explosive Growth</div>
+                        <h3 class="card-title" data-translate="market-outlook">Market Outlook</h3>
+                        <div class="card-highlight" data-translate="explosive-growth">Explosive Growth</div>
                         <ul class="card-details">
-                            <li>US Bitcoin Strategic Reserve adoption</li>
-                            <li>Stablecoin legislation passed</li>
-                            <li>Institutional crypto validation accelerating</li>
-                            <li>$703M → $1T+ market expansion imminent</li>
+                            <li data-translate="market-card-1">US Bitcoin Strategic Reserve adoption</li>
+                            <li data-translate="market-card-2">Stablecoin legislation passed</li>
+                            <li data-translate="market-card-3">Institutional crypto validation accelerating</li>
+                            <li data-translate="market-card-4">$703M → $1T+ market expansion imminent</li>
                         </ul>
                     </div>
                     
                     <!-- Top Right Quadrant -->
                     <div class="opportunity-card trends-card quadrant-top-right">
                         <div class="card-icon">🧠</div>
-                        <h3 class="card-title">AI + Web3 Revolution</h3>
-                        <div class="card-highlight">Intelligence Everywhere</div>
+                        <h3 class="card-title" data-translate="ai-web3-revolution">AI + Web3 Revolution</h3>
+                        <div class="card-highlight" data-translate="intelligence-everywhere">Intelligence Everywhere</div>
                         <ul class="card-details">
-                            <li>AI-powered trading bots (15-20% APY)</li>
-                            <li>Intelligent DePIN infrastructure</li>
-                            <li>Smart contracts with AI decision-making</li>
-                            <li>AI-driven Web3 app development</li>
+                            <li data-translate="ai-card-1">AI-powered trading bots (15-20% APY)</li>
+                            <li data-translate="ai-card-2">Intelligent DePIN infrastructure</li>
+                            <li data-translate="ai-card-3">Smart contracts with AI decision-making</li>
+                            <li data-translate="ai-card-4">AI-driven Web3 app development</li>
                         </ul>
                     </div>
                     
                     <!-- Central Chart -->
                     <div class="chart-section-center">
                         <div class="chart-container-radial">
-                            <div class="chart-title">The Opportunity</div>
+                            <div class="chart-title" data-translate="chart-title">Market Opportunity</div>
                             <canvas id="opportunityChart" width="400" height="280"></canvas>
-                            <div class="chart-subtitle">AI + Web3 Market Growth</div>
+                            <div class="chart-subtitle" data-translate="chart-subtitle">AI + Web3 Market Growth</div>
                         </div>
                     </div>
                     
                     <!-- Bottom Left Quadrant -->
                     <div class="opportunity-card pain-card quadrant-bottom-left">
                         <div class="card-icon">💔</div>
-                        <h3 class="card-title">Access Barriers</h3>
-                        <div class="card-highlight">Wealth Gap Crisis</div>
+                        <h3 class="card-title" data-translate="access-barriers">Access Barriers</h3>
+                        <div class="card-highlight" data-translate="wealth-gap-crisis">Wealth Gap Crisis</div>
                         <ul class="card-details">
-                            <li>Complex Web3 interfaces exclude masses</li>
-                            <li>High fees lock out retail investors</li>
-                            <li>Fragmented tools & information</li>
-                            <li>Our solution: Free-first democratization</li>
+                            <li data-translate="barrier-card-1">Complex Web3 interfaces exclude masses</li>
+                            <li data-translate="barrier-card-2">High fees lock out retail investors</li>
+                            <li data-translate="barrier-card-3">Fragmented tools & information</li>
+                            <li data-translate="barrier-card-4">Our solution: Free-first democratization</li>
                         </ul>
                     </div>
                     
                     <!-- Bottom Right Quadrant -->
                     <div class="opportunity-card timing-card quadrant-bottom-right">
                         <div class="card-icon">🌅</div>
-                        <h3 class="card-title">Web3 Migration</h3>
-                        <div class="card-highlight">Light at the Tunnel</div>
+                        <h3 class="card-title" data-translate="web3-migration">Web3 Migration</h3>
+                        <div class="card-highlight" data-translate="light-tunnel">Light at the Tunnel</div>
                         <ul class="card-details">
-                            <li>Web2 → Web3 migration accelerating</li>
-                            <li>True decentralized world emerging</li>
-                            <li>"Digital money" becoming universal</li>
-                            <li>Users ready for simplified access</li>
+                            <li data-translate="migration-card-1">Web2 → Web3 migration accelerating</li>
+                            <li data-translate="migration-card-2">True decentralized world emerging</li>
+                            <li data-translate="migration-card-3">"Digital money" becoming universal</li>
+                            <li data-translate="migration-card-4">Users ready for simplified access</li>
                         </ul>
                     </div>
                 </div>
@@ -210,18 +218,18 @@
         <!-- Slide 3: Problem & Solution -->
         <div class="slide" id="slide-3">
             <div class="slide-content scrollable">
-                <h1><i class="fas fa-lightbulb"></i> Problem & Solution 💡</h1>
+                <h1><i class="fas fa-lightbulb"></i> <span data-translate="problem-solution-title">Problem & Solution 💡</span></h1>
                 <div class="problem-solution-pairs">
                     <!-- Pair 1: Cryptic → Knowledge -->
                     <div class="solution-pair">
                         <div class="problem-card">
                             <div class="card-icon">🔍</div>
-                            <h3 class="card-title">Too Cryptic</h3>
-                            <div class="card-highlight">Learning Curve Nightmare</div>
+                            <h3 class="card-title" data-translate="problem-1-title">Too Cryptic</h3>
+                            <div class="card-highlight" data-translate="problem-1-highlight">Learning Curve Nightmare</div>
                             <ul class="card-details">
-                                <li>Complex jargon and buzzwords everywhere</li>
-                                <li>Technical barriers exclude regular users</li>
-                                <li>Steep learning curve discourages entry</li>
+                                <li data-translate="problem-1-detail-1">Complex jargon and buzzwords everywhere</li>
+                                <li data-translate="problem-1-detail-2">Technical barriers exclude regular users</li>
+                                <li data-translate="problem-1-detail-3">Steep learning curve discourages entry</li>
                             </ul>
                         </div>
                         
@@ -234,12 +242,12 @@
                         <div class="solution-card">
                             <div class="solution-badge">AIC</div>
                             <div class="card-icon">📚</div>
-                            <h3 class="card-title">Easy Knowledge Nexus</h3>
-                            <div class="card-highlight">Plain English Learning</div>
+                            <h3 class="card-title" data-translate="solution-1-title">Easy Knowledge Nexus</h3>
+                            <div class="card-highlight" data-translate="solution-1-highlight">Plain English Learning</div>
                             <ul class="card-details">
-                                <li>AI explains complex concepts simply</li>
-                                <li>Beginner-friendly step-by-step guides</li>
-                                <li>Progressive learning paths for all levels</li>
+                                <li data-translate="solution-1-detail-1">AI explains complex concepts simply</li>
+                                <li data-translate="solution-1-detail-2">Beginner-friendly step-by-step guides</li>
+                                <li data-translate="solution-1-detail-3">Progressive learning paths for all levels</li>
                             </ul>
                         </div>
                     </div>
@@ -248,12 +256,12 @@
                     <div class="solution-pair">
                         <div class="problem-card">
                             <div class="card-icon">😵</div>
-                            <h3 class="card-title">Overwhelming</h3>
-                            <div class="card-highlight">Information Chaos</div>
+                            <h3 class="card-title" data-translate="problem-2-title">Overwhelming</h3>
+                            <div class="card-highlight" data-translate="problem-2-highlight">Information Chaos</div>
                             <ul class="card-details">
-                                <li>Fragmented data across platforms</li>
-                                <li>Conflicting advice and signals</li>
-                                <li>Analysis paralysis from too many options</li>
+                                <li data-translate="problem-2-detail-1">Fragmented data across platforms</li>
+                                <li data-translate="problem-2-detail-2">Conflicting advice and signals</li>
+                                <li data-translate="problem-2-detail-3">Analysis paralysis from too many options</li>
                             </ul>
                         </div>
                         
@@ -266,12 +274,12 @@
                         <div class="solution-card">
                             <div class="solution-badge">AIC</div>
                             <div class="card-icon">🎯</div>
-                            <h3 class="card-title">Curated Intelligence</h3>
-                            <div class="card-highlight">Relevant Insights Only</div>
+                            <h3 class="card-title" data-translate="solution-2-title">Curated Intelligence</h3>
+                            <div class="card-highlight" data-translate="solution-2-highlight">Relevant Insights Only</div>
                             <ul class="card-details">
-                                <li>AI filters noise, surfaces value</li>
-                                <li>Personalized content recommendations</li>
-                                <li>Quality over quantity approach</li>
+                                <li data-translate="solution-2-detail-1">AI filters noise, surfaces value</li>
+                                <li data-translate="solution-2-detail-2">Personalized content recommendations</li>
+                                <li data-translate="solution-2-detail-3">Quality over quantity approach</li>
                             </ul>
                         </div>
                     </div>
@@ -280,12 +288,12 @@
                     <div class="solution-pair">
                         <div class="problem-card">
                             <div class="card-icon">⚠️</div>
-                            <h3 class="card-title">Scam-Ridden</h3>
-                            <div class="card-highlight">Trust Crisis</div>
+                            <h3 class="card-title" data-translate="problem-3-title">Scam-Ridden</h3>
+                            <div class="card-highlight" data-translate="problem-3-highlight">Trust Crisis</div>
                             <ul class="card-details">
-                                <li>Countless scams and rug pulls</li>
-                                <li>Fake influencers promoting garbage</li>
-                                <li>Fear prevents user participation</li>
+                                <li data-translate="problem-3-detail-1">Countless scams and rug pulls</li>
+                                <li data-translate="problem-3-detail-2">Fake influencers promoting garbage</li>
+                                <li data-translate="problem-3-detail-3">Fear prevents user participation</li>
                             </ul>
                         </div>
                         
@@ -298,12 +306,12 @@
                         <div class="solution-card">
                             <div class="solution-badge">AIC</div>
                             <div class="card-icon">🛡️</div>
-                            <h3 class="card-title">Research-Based Trust</h3>
-                            <div class="card-highlight">Verified Insights</div>
+                            <h3 class="card-title" data-translate="solution-3-title">Research-Based Trust</h3>
+                            <div class="card-highlight" data-translate="solution-3-highlight">Verified Insights</div>
                             <ul class="card-details">
-                                <li>AI verifies claims with ZK proofs</li>
-                                <li>Research-backed recommendations</li>
-                                <li>Community-verified signal quality</li>
+                                <li data-translate="solution-3-detail-1">AI verifies claims with ZK proofs</li>
+                                <li data-translate="solution-3-detail-2">Research-backed recommendations</li>
+                                <li data-translate="solution-3-detail-3">Community-verified signal quality</li>
                             </ul>
                         </div>
                     </div>
@@ -312,12 +320,12 @@
                     <div class="solution-pair">
                         <div class="problem-card">
                             <div class="card-icon">💸</div>
-                            <h3 class="card-title">Fee-Heavy</h3>
-                            <div class="card-highlight">Money Extraction</div>
+                            <h3 class="card-title" data-translate="problem-4-title">Fee-Heavy</h3>
+                            <div class="card-highlight" data-translate="problem-4-highlight">Money Extraction</div>
                             <ul class="card-details">
-                                <li>Hidden fees and subscription traps</li>
-                                <li>Platforms prioritize extraction over value</li>
-                                <li>Users feel exploited, not empowered</li>
+                                <li data-translate="problem-4-detail-1">Hidden fees and subscription traps</li>
+                                <li data-translate="problem-4-detail-2">Platforms prioritize extraction over value</li>
+                                <li data-translate="problem-4-detail-3">Users feel exploited, not empowered</li>
                             </ul>
                         </div>
                         
@@ -330,12 +338,12 @@
                         <div class="solution-card">
                             <div class="solution-badge">AIC</div>
                             <div class="card-icon">🎁</div>
-                            <h3 class="card-title">User-First Value</h3>
-                            <div class="card-highlight">Free + Transparent</div>
+                            <h3 class="card-title" data-translate="solution-4-title">User-First Value</h3>
+                            <div class="card-highlight" data-translate="solution-4-highlight">Free + Transparent</div>
                             <ul class="card-details">
-                                <li>Core features completely FREE</li>
-                                <li>$AIC tokens reward user contributions</li>
-                                <li>Joyful premium experience, never forced</li>
+                                <li data-translate="solution-4-detail-1">Core features completely FREE</li>
+                                <li data-translate="solution-4-detail-2">$AIC tokens reward user contributions</li>
+                                <li data-translate="solution-4-detail-3">Joyful premium experience, never forced</li>
                             </ul>
                         </div>
                     </div>
@@ -346,76 +354,76 @@
         <!-- Slide 4: User-centric Value Proposition -->
         <div class="slide" id="slide-4">
             <div class="slide-content scrollable">
-                <h1><i class="fas fa-star"></i> User-centric Value Proposition ⭐</h1>
+                <h1><i class="fas fa-star"></i> <span data-translate="value-proposition-title">User-centric Value Proposition ⭐</span></h1>
                 <div class="value-grid">
                     <div class="user-value">
-                        <h3>💎 Positioning Users for the Crypto Gold Rush</h3>
-                        <p class="gold-rush-context">With Bitcoin becoming a Strategic Reserve and institutional adoption accelerating, we position users to capitalize on the largest wealth transfer in crypto history.</p>
+                        <h3 data-translate="crypto-gold-rush-title">💎 Positioning Users for the Crypto Gold Rush</h3>
+                        <p class="gold-rush-context" data-translate="crypto-gold-rush-context">With Bitcoin becoming a Strategic Reserve and institutional adoption accelerating, we position users to capitalize on the largest wealth transfer in crypto history.</p>
                         <div class="value-cards">
                             <div class="value-card knowledge-value">
                                 <div class="card-icon">📚</div>
-                                <h4 class="card-title">Easy Knowledge Nexus</h4>
-                                <div class="card-highlight">Plain English Learning</div>
-                                <p class="card-description">AI explains crypto simply—no more cryptic jargon. Position yourself confidently for emerging opportunities</p>
+                                <h4 class="card-title" data-translate="value-card-1-title">Easy Knowledge Nexus</h4>
+                                <div class="card-highlight" data-translate="value-card-1-highlight">Plain English Learning</div>
+                                <p class="card-description" data-translate="value-card-1-description">AI explains crypto simply—no more cryptic jargon. Position yourself confidently for emerging opportunities</p>
                             </div>
                             
                             <div class="value-card intelligence-value">
                                 <div class="card-icon">🎯</div>
-                                <h4 class="card-title">Curated Intelligence</h4>
-                                <div class="card-highlight">Relevant Insights Only</div>
-                                <p class="card-description">Stop being overwhelmed—AI filters noise to surface gold rush signals before the crowd</p>
+                                <h4 class="card-title" data-translate="value-card-2-title">Curated Intelligence</h4>
+                                <div class="card-highlight" data-translate="value-card-2-highlight">Relevant Insights Only</div>
+                                <p class="card-description" data-translate="value-card-2-description">Stop being overwhelmed—AI filters noise to surface gold rush signals before the crowd</p>
                             </div>
                             
                             <div class="value-card trust-value">
                                 <div class="card-icon">🛡️</div>
-                                <h4 class="card-title">Research-Based Trust</h4>
-                                <div class="card-highlight">Verified & Safe</div>
-                                <p class="card-description">No more scams—AI verifies claims with ZK proofs. Navigate the biggest crypto wave with confidence</p>
+                                <h4 class="card-title" data-translate="value-card-3-title">Research-Based Trust</h4>
+                                <div class="card-highlight" data-translate="value-card-3-highlight">Verified & Safe</div>
+                                <p class="card-description" data-translate="value-card-3-description">No more scams—AI verifies claims with ZK proofs. Navigate the biggest crypto wave with confidence</p>
                             </div>
                             
                             <div class="value-card user-first-value">
                                 <div class="card-icon">🎁</div>
-                                <h4 class="card-title">User-First Value</h4>
-                                <div class="card-highlight">Free + Rewarding</div>
-                                <p class="card-description">Core features FREE, $AIC tokens reward participation. Access institutional-grade tools for mass adoption</p>
+                                <h4 class="card-title" data-translate="value-card-4-title">User-First Value</h4>
+                                <div class="card-highlight" data-translate="value-card-4-highlight">Free + Rewarding</div>
+                                <p class="card-description" data-translate="value-card-4-description">Core features FREE, $AIC tokens reward participation. Access institutional-grade tools for mass adoption</p>
                             </div>
                         </div>
                     </div>
                     <div class="uniqueness">
-                        <h3>🚀 Our Advantage vs Fee-Heavy Competitors</h3>
+                        <h3 data-translate="competitive-advantage-title">🚀 Our Advantage vs Fee-Heavy Competitors</h3>
                         <table class="comparison-table">
                             <thead>
                                 <tr>
-                                    <th>Feature</th>
-                                    <th>AICryptopia</th>
-                                    <th>Token Metrics, Others</th>
+                                    <th data-translate="table-header-feature">Feature</th>
+                                    <th data-translate="table-header-aicryptopia">AICryptopia</th>
+                                    <th data-translate="table-header-competitors">Token Metrics, Others</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Learning Curve</td>
-                                    <td>✅ Plain English AI</td>
-                                    <td>❌ Cryptic Jargon</td>
+                                    <td data-translate="table-row-1-feature">Learning Curve</td>
+                                    <td data-translate="table-row-1-aicryptopia">✅ Plain English AI</td>
+                                    <td data-translate="table-row-1-competitors">❌ Cryptic Jargon</td>
                                 </tr>
                                 <tr>
-                                    <td>Information Overload</td>
-                                    <td>✅ Curated Intelligence</td>
-                                    <td>❌ Fragmented Chaos</td>
+                                    <td data-translate="table-row-2-feature">Information Overload</td>
+                                    <td data-translate="table-row-2-aicryptopia">✅ Curated Intelligence</td>
+                                    <td data-translate="table-row-2-competitors">❌ Fragmented Chaos</td>
                                 </tr>
                                 <tr>
-                                    <td>Trust & Safety</td>
-                                    <td>✅ ZK Proof Verification</td>
-                                    <td>❌ Scam-Prone Black Box</td>
+                                    <td data-translate="table-row-3-feature">Trust & Safety</td>
+                                    <td data-translate="table-row-3-aicryptopia">✅ ZK Proof Verification</td>
+                                    <td data-translate="table-row-3-competitors">❌ Scam-Prone Black Box</td>
                                 </tr>
                                 <tr>
-                                    <td>Payment Model</td>
-                                    <td>✅ Free + Joyful Premium</td>
-                                    <td>❌ Fee-Heavy Extraction</td>
+                                    <td data-translate="table-row-4-feature">Payment Model</td>
+                                    <td data-translate="table-row-4-aicryptopia">✅ Free + Joyful Premium</td>
+                                    <td data-translate="table-row-4-competitors">❌ Fee-Heavy Extraction</td>
                                 </tr>
                                 <tr>
-                                    <td>Community Ownership</td>
-                                    <td>✅ $AIC Token Rewards</td>
-                                    <td>❌ Centralized Platform</td>
+                                    <td data-translate="table-row-5-feature">Community Ownership</td>
+                                    <td data-translate="table-row-5-aicryptopia">✅ $AIC Token Rewards</td>
+                                    <td data-translate="table-row-5-competitors">❌ Centralized Platform</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -427,16 +435,16 @@
         <!-- Slide 5: What We Build -->
         <div class="slide" id="slide-5">
             <div class="slide-content scrollable">
-                <h1><i class="fas fa-cubes"></i> What We Build 🏗️</h1>
+                <h1><i class="fas fa-cubes"></i> <span data-translate="what-we-build-title">What We Build 🏗️</span></h1>
                 <div class="orbital-ecosystem">
                     <!-- Central Hub - Dead Center -->
                     <div class="central-core">
                         <div class="hub-icon">🏛️</div>
-                        <h2>User-Owned AI Cryptopia</h2>
-                        <p class="hub-tagline">Community-driven wealth building platform</p>
+                        <h2 data-translate="central-hub-title">User-Owned AI Cryptopia</h2>
+                        <p class="hub-tagline" data-translate="central-hub-tagline">Community-driven wealth building platform</p>
                         <div class="aic-core-indicator">
                             <span class="token-symbol">$AIC</span>
-                            <span class="flow-text">Powers Everything</span>
+                            <span class="flow-text" data-translate="central-hub-flow-text">Powers Everything</span>
                         </div>
                     </div>
 
@@ -446,19 +454,19 @@
                         <div class="component-card knowledge-component">
                             <div class="component-header">
                                 <div class="component-icon">📚</div>
-                                <h3>Crypto Knowledge Nexus</h3>
+                                <h3 data-translate="knowledge-nexus-title">Crypto Knowledge Nexus</h3>
                             </div>
                             <div class="component-features">
                                 <ul>
-                                    <li>AI-curated learning paths</li>
-                                    <li>Community-verified content</li>
-                                    <li>Interactive tutorials</li>
-                                    <li>Real-time insights</li>
+                                    <li data-translate="knowledge-feature-1">AI-curated learning paths</li>
+                                    <li data-translate="knowledge-feature-2">Community-verified content</li>
+                                    <li data-translate="knowledge-feature-3">Interactive tutorials</li>
+                                    <li data-translate="knowledge-feature-4">Real-time insights</li>
                                 </ul>
                             </div>
                             <div class="task-examples-mini">
-                                <div class="task-mini">✍️ Write guides <span>+50 $AIC</span></div>
-                                <div class="task-mini">✅ Verify content <span>+25 $AIC</span></div>
+                                <div class="task-mini"><span data-translate="knowledge-task-1">✍️ Write guides</span> <span>+50 $AIC</span></div>
+                                <div class="task-mini"><span data-translate="knowledge-task-2">✅ Verify content</span> <span>+25 $AIC</span></div>
                             </div>
                         </div>
                     </div>
@@ -468,19 +476,19 @@
                         <div class="component-card trading-component">
                             <div class="component-header">
                                 <div class="component-icon">🤖</div>
-                                <h3>AI-Powered Trading Tools</h3>
+                                <h3 data-translate="trading-tools-title">AI-Powered Trading Tools</h3>
                             </div>
                             <div class="component-features">
                                 <ul>
-                                    <li>Intelligent trading bots</li>
-                                    <li>Market analysis AI</li>
-                                    <li>Risk management tools</li>
-                                    <li>Portfolio optimization</li>
+                                    <li data-translate="trading-feature-1">Intelligent trading bots</li>
+                                    <li data-translate="trading-feature-2">Market analysis AI</li>
+                                    <li data-translate="trading-feature-3">Risk management tools</li>
+                                    <li data-translate="trading-feature-4">Portfolio optimization</li>
                                 </ul>
                             </div>
                             <div class="task-examples-mini">
-                                <div class="task-mini">📊 Share insights <span>+30 $AIC</span></div>
-                                <div class="task-mini">🔧 Tool feedback <span>+20 $AIC</span></div>
+                                <div class="task-mini"><span data-translate="trading-task-1">📊 Share insights</span> <span>+30 $AIC</span></div>
+                                <div class="task-mini"><span data-translate="trading-task-2">🔧 Tool feedback</span> <span>+20 $AIC</span></div>
                             </div>
                         </div>
                     </div>
@@ -490,19 +498,19 @@
                         <div class="component-card community-component">
                             <div class="component-header">
                                 <div class="component-icon">🏘️</div>
-                                <h3>Community Ecosystem</h3>
+                                <h3 data-translate="community-ecosystem-title">Community Ecosystem</h3>
                             </div>
                             <div class="component-features">
                                 <ul>
-                                    <li>User governance via tokens</li>
-                                    <li>Collaborative strategies</li>
-                                    <li>Peer-to-peer learning</li>
-                                    <li>Community challenges</li>
+                                    <li data-translate="community-feature-1">User governance via tokens</li>
+                                    <li data-translate="community-feature-2">Collaborative strategies</li>
+                                    <li data-translate="community-feature-3">Peer-to-peer learning</li>
+                                    <li data-translate="community-feature-4">Community challenges</li>
                                 </ul>
                             </div>
                             <div class="task-examples-mini">
-                                <div class="task-mini">🤝 Help members <span>+10 $AIC</span></div>
-                                <div class="task-mini">🗳️ Governance <span>+20 $AIC</span></div>
+                                <div class="task-mini"><span data-translate="community-task-1">🤝 Help members</span> <span>+10 $AIC</span></div>
+                                <div class="task-mini"><span data-translate="community-task-2">🗳️ Governance</span> <span>+20 $AIC</span></div>
                             </div>
                         </div>
                     </div>
@@ -549,7 +557,7 @@
 
                     <!-- Ownership message -->
                     <div class="ownership-banner">
-                        <p>💎 <strong>True Ownership:</strong> Users build, own, and profit from AI Cryptopia together</p>
+                        <p>💎 <strong data-translate="ownership-banner">True Ownership: Users build, own, and profit from AI Cryptopia together</strong></p>
                     </div>
                 </div>
             </div>
@@ -558,11 +566,11 @@
         <!-- Slide 6: Staged Open-source Development -->
         <div class="slide" id="slide-6">
             <div class="slide-content scrollable">
-                <h1><i class="fas fa-road"></i> Staged Open-source Development ⏳</h1>
+                <h1><i class="fas fa-road"></i> <span data-translate="staged-development-title">Staged Open-source Development ⏳</span></h1>
                 <div class="timeline-layout-horizontal">
                     <div class="timeline-header-compact">
-                        <h3>🚀 Strategic 3-Phase Roadmap: Tokenomics-First Approach</h3>
-                        <p class="timeline-subtitle-compact">Building user ownership from day one with immediate $AIC rewards</p>
+                        <h3 data-translate="roadmap-header">🚀 Strategic 3-Phase Roadmap: Tokenomics-First Approach</h3>
+                        <p class="timeline-subtitle-compact" data-translate="roadmap-subtitle">Building user ownership from day one with immediate $AIC rewards</p>
                     </div>
                     
                     <!-- Horizontal Timeline -->
@@ -575,17 +583,17 @@
                             </div>
                             <div class="phase-content-horizontal">
                                 <div class="phase-header-horizontal">
-                                    <h4 class="phase-title-horizontal">Foundation + $AIC Launch</h4>
-                                    <span class="phase-timeline-horizontal">Q3-Q4 2025</span>
+                                    <h4 class="phase-title-horizontal" data-translate="phase-1-title">Foundation + $AIC Launch</h4>
+                                    <span class="phase-timeline-horizontal" data-translate="phase-1-timeline">Q3-Q4 2025</span>
                                 </div>
                                 <ul class="phase-deliverables-horizontal">
-                                    <li>🏛️ Core infra setup</li>
-                                    <li>📚 Knowledge Nexus MVP</li>
-                                    <li>💎 **$AIC Tokenomics**</li>
-                                    <li>🎯 User reward system</li>
+                                    <li data-translate="phase-1-deliverable-1">🏛️ Core infra setup</li>
+                                    <li data-translate="phase-1-deliverable-2">📚 Knowledge Nexus MVP</li>
+                                    <li data-translate="phase-1-deliverable-3">💎 $AIC Tokenomics</li>
+                                    <li data-translate="phase-1-deliverable-4">🎯 User reward system</li>
                                 </ul>
                                 <div class="phase-milestone-horizontal">
-                                    <span class="milestone-value-horizontal">1K users earning $AIC</span>
+                                    <span class="milestone-value-horizontal" data-translate="phase-1-milestone">1K users earning $AIC</span>
                                 </div>
                             </div>
                         </div>
@@ -605,17 +613,17 @@
                             </div>
                             <div class="phase-content-horizontal">
                                 <div class="phase-header-horizontal">
-                                    <h4 class="phase-title-horizontal">AI Trading Platform</h4>
-                                    <span class="phase-timeline-horizontal">Q1-Q2 2026</span>
+                                    <h4 class="phase-title-horizontal" data-translate="phase-2-title">AI Trading Platform</h4>
+                                    <span class="phase-timeline-horizontal" data-translate="phase-2-timeline">Q1-Q2 2026</span>
                                 </div>
                                 <ul class="phase-deliverables-horizontal">
-                                    <li>🤖 AI trading tools</li>
-                                    <li>📊 Market analysis bots</li>
-                                    <li>💰 Joyful pay model</li>
-                                    <li>🔧 Premium features</li>
+                                    <li data-translate="phase-2-deliverable-1">🤖 AI trading tools</li>
+                                    <li data-translate="phase-2-deliverable-2">📊 Market analysis bots</li>
+                                    <li data-translate="phase-2-deliverable-3">💰 Joyful pay model</li>
+                                    <li data-translate="phase-2-deliverable-4">🔧 Premium features</li>
                                 </ul>
                                 <div class="phase-milestone-horizontal">
-                                    <span class="milestone-value-horizontal">10K users, $1M ARR</span>
+                                    <span class="milestone-value-horizontal" data-translate="phase-2-milestone">10K users, $1M ARR</span>
                                 </div>
                             </div>
                         </div>
@@ -635,17 +643,17 @@
                             </div>
                             <div class="phase-content-horizontal">
                                 <div class="phase-header-horizontal">
-                                    <h4 class="phase-title-horizontal">Scale & Governance</h4>
-                                    <span class="phase-timeline-horizontal">Q3-Q4 2026</span>
+                                    <h4 class="phase-title-horizontal" data-translate="phase-3-title">Scale & Governance</h4>
+                                    <span class="phase-timeline-horizontal" data-translate="phase-3-timeline">Q3-Q4 2026</span>
                                 </div>
                                 <ul class="phase-deliverables-horizontal">
-                                    <li>🔥 $AIC burns & halvings</li>
-                                    <li>🗳️ DAO governance</li>
-                                    <li>🌍 Community features</li>
-                                    <li>🚀 Massive adoption</li>
+                                    <li data-translate="phase-3-deliverable-1">🔥 $AIC burns & halvings</li>
+                                    <li data-translate="phase-3-deliverable-2">🗳️ DAO governance</li>
+                                    <li data-translate="phase-3-deliverable-3">🌍 Community features</li>
+                                    <li data-translate="phase-3-deliverable-4">🚀 Massive adoption</li>
                                 </ul>
                                 <div class="phase-milestone-horizontal">
-                                    <span class="milestone-value-horizontal">100K users, $100M TVL</span>
+                                    <span class="milestone-value-horizontal" data-translate="phase-3-milestone">100K users, $100M TVL</span>
                                 </div>
                             </div>
                         </div>
@@ -654,25 +662,25 @@
                     <!-- Integrated Strategic Benefits -->
                     <div class="strategy-benefits-integrated">
                         <div class="benefits-header">
-                            <h4>🎯 Why This Approach Wins</h4>
+                            <h4 data-translate="benefits-header">🎯 Why This Approach Wins</h4>
                         </div>
                         <div class="benefits-grid-compact">
                             <div class="benefit-card-compact tokenomics-benefit">
                                 <div class="benefit-icon-compact">💡</div>
                                 <div class="benefit-text-compact">
-                                    <strong>Tokenomics First:</strong> Early $AIC rewards create immediate engagement
+                                    <strong data-translate="benefit-1-title">Tokenomics First:</strong> <span data-translate="benefit-1-description">Early $AIC rewards create immediate engagement</span>
                                 </div>
                             </div>
                             <div class="benefit-card-compact flywheel-benefit">
                                 <div class="benefit-icon-compact">🔄</div>
                                 <div class="benefit-text-compact">
-                                    <strong>Flywheel Effect:</strong> Free Knowledge + $AIC → User Value → Viral Growth
+                                    <strong data-translate="benefit-2-title">Flywheel Effect:</strong> <span data-translate="benefit-2-description">Free Knowledge + $AIC → User Value → Viral Growth</span>
                                 </div>
                             </div>
                             <div class="benefit-card-compact advantage-benefit">
                                 <div class="benefit-icon-compact">⚡</div>
                                 <div class="benefit-text-compact">
-                                    <strong>Competitive Advantage:</strong> While others extract fees, we reward users
+                                    <strong data-translate="benefit-3-title">Competitive Advantage:</strong> <span data-translate="benefit-3-description">While others extract fees, we reward users</span>
                                 </div>
                             </div>
                         </div>
@@ -2328,21 +2336,21 @@
                             <div class="contact-method primary-contact">
                                 <div class="contact-icon">📧</div>
                                 <h5>Direct Investment Inquiry</h5>
-                                <div class="contact-detail">contact@aicryptopia.com</div>
+                                <div class="contact-detail" data-translate="contact-email">contact@aicryptopia.com</div>
                                 <div class="contact-action">Email for immediate $500K seed round allocation</div>
                             </div>
                             
                             <div class="contact-method platform-access">
                                 <div class="contact-icon">🌐</div>
                                 <h5>Platform & Updates</h5>
-                                <div class="contact-detail">www.aicryptopia.com</div>
+                                <div class="contact-detail" data-translate="website">www.aicryptopia.com</div>
                                 <div class="contact-action">Stay updated on development milestones</div>
                             </div>
                             
                             <div class="contact-method community-access">
                                 <div class="contact-icon">🐦</div>
                                 <h5>Community & Insights</h5>
-                                <div class="contact-detail">@AICryptopia</div>
+                                <div class="contact-detail" data-translate="twitter">@AICryptopia</div>
                                 <div class="contact-action">Join our growing movement of wealth builders</div>
                             </div>
                         </div>
@@ -2353,7 +2361,7 @@
                         <div class="final-cta-card">
                             <div class="cta-urgency-icon">⏰</div>
                             <div class="cta-final-content">
-                                <h5>Limited Time Opportunity: <span class="urgency-rating act-now">ACT NOW</span></h5>
+                                <h5>Limited Time Opportunity: <span class="urgency-rating act-now" data-translate="act-now">ACT NOW</span></h5>
                                 <div class="cta-final-breakdown">
                                     <div class="cta-timeline">
                                         <strong>Seed Round Closing:</strong> Q3 2025 - Secure your allocation before it's too late
