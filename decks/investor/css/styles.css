@@ -2240,6 +2240,455 @@ li::before {
     }
 }
 
+/* Slide 12: Exit Strategy Framework */
+.exit-strategy-framework {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.exit-header {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 165, 0, 0.3);
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+.exit-subtitle {
+    color: #cccccc;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Strategic Acquisition Targets Section */
+.acquisition-targets-section {
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.acquisition-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.acquisition-header h4 {
+    color: #ffd700;
+    margin-bottom: 0.5rem;
+}
+
+.acquisition-header p {
+    color: #cccccc;
+    font-size: 0.9rem;
+}
+
+.acquisition-targets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.target-card {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: 2px solid;
+}
+
+.target-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
+}
+
+.crypto-exchanges {
+    border-color: rgba(0, 255, 255, 0.5);
+}
+
+.big-tech {
+    border-color: rgba(255, 0, 255, 0.5);
+}
+
+.fintech-leaders {
+    border-color: rgba(255, 165, 0, 0.5);
+}
+
+.web3-natives {
+    border-color: rgba(0, 255, 0, 0.5);
+}
+
+.target-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.target-card h5 {
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.target-highlight {
+    background: rgba(255, 215, 0, 0.2);
+    color: #ffd700;
+    padding: 0.4rem 1rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.target-details {
+    text-align: left;
+}
+
+.target-examples, .target-rationale, .target-value {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.6rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    line-height: 1.3;
+}
+
+.target-examples {
+    color: #ffffff;
+}
+
+.target-rationale {
+    color: #00ffff;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+}
+
+.target-value {
+    color: #00ff00;
+    border: 1px solid rgba(0, 255, 0, 0.3);
+}
+
+/* Value Creation Timeline Section */
+.value-timeline-section {
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.timeline-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-header h4 {
+    color: #00ffff;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-header p {
+    color: #cccccc;
+    font-size: 0.9rem;
+}
+
+.value-timeline-stages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.timeline-stage {
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(0, 255, 255, 0.4);
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-stage:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+}
+
+.stage-marker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.stage-number {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 255, 255, 0.2);
+    border: 2px solid #00ffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00ffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.stage-icon {
+    font-size: 1.5rem;
+}
+
+.stage-content {
+    text-align: center;
+    width: 100%;
+}
+
+.stage-content h5 {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.stage-timeframe {
+    background: rgba(255, 215, 0, 0.2);
+    color: #ffd700;
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.stage-metrics {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.metric-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.5rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+}
+
+.metric-label {
+    color: #cccccc;
+}
+
+.metric-value {
+    color: #00ffff;
+    font-weight: bold;
+}
+
+.stage-rationale {
+    background: rgba(0, 255, 255, 0.1);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    padding: 0.6rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: #ffffff;
+    text-align: left;
+}
+
+/* Investor Returns Section */
+.investor-returns-section {
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 0, 255, 0.3);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.returns-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.returns-header h4 {
+    color: #ff00ff;
+    margin-bottom: 0.5rem;
+}
+
+.returns-header p {
+    color: #cccccc;
+    font-size: 0.9rem;
+}
+
+.returns-scenarios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.scenario-card {
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(255, 0, 255, 0.4);
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.scenario-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0.3);
+}
+
+.scenario-header {
+    margin-bottom: 1rem;
+}
+
+.scenario-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.scenario-card h5 {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.scenario-probability {
+    background: rgba(255, 0, 255, 0.2);
+    color: #ff00ff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.return-multiple {
+    background: rgba(255, 215, 0, 0.2);
+    color: #ffd700;
+    padding: 0.8rem;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+.scenario-assumptions {
+    text-align: left;
+}
+
+.assumption-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.6rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    color: #ffffff;
+}
+
+/* Strategic Positioning Summary Section */
+.positioning-summary-section {
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 255, 0, 0.3);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.positioning-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.positioning-header h4 {
+    color: #00ff00;
+    margin-bottom: 0.5rem;
+}
+
+.positioning-card {
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(0, 255, 0, 0.4);
+    border-radius: 15px;
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.strategy-icon {
+    font-size: 3rem;
+    flex-shrink: 0;
+    color: #00ff00;
+}
+
+.strategy-content h5 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.strategy-rating {
+    background: rgba(0, 255, 0, 0.2);
+    color: #00ff00;
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: 1px solid rgba(0, 255, 0, 0.4);
+}
+
+.high-value {
+    text-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+.strategy-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.strategy-strength, .strategy-timing, .strategy-positioning, .strategy-conclusion {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #ffffff;
+}
+
+.strategy-conclusion {
+    background: rgba(0, 255, 0, 0.1);
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    color: #00ff00;
+}
+
+/* Exit Strategy Responsive Design */
+@media (max-width: 768px) {
+    .acquisition-targets-grid, .returns-scenarios-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .value-timeline-stages {
+        grid-template-columns: 1fr;
+    }
+    
+    .positioning-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .strategy-breakdown {
+        gap: 0.6rem;
+    }
+}
+
 /* Radial Opportunity Layout */
 .opportunity-layout-radial {
     display: grid;
