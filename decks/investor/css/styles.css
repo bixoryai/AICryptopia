@@ -1782,7 +1782,12 @@ li::before {
     font-size: 0.8rem;
     line-height: 1.4;
     margin-bottom: 0.3rem;
-    padding-left: 0.5rem;
+    padding-left: 0;
+    text-align: center;
+}
+
+.allocation-details li::before {
+    display: none;
 }
 
 .funding-chart-section {
@@ -4529,8 +4534,13 @@ li::before {
 .phase-deliverables-horizontal li {
     font-size: 0.9rem;
     color: #e0e0e0;
-    text-align: left;
+    text-align: center;
     line-height: 1.3;
+    padding-left: 0;
+}
+
+.phase-deliverables-horizontal li::before {
+    display: none;
 }
 
 .phase-deliverables-horizontal li strong {
@@ -4875,8 +4885,13 @@ li::before {
 .stage-sources-revenue li {
     font-size: 0.9rem;
     color: #e0e0e0;
-    text-align: left;
+    text-align: center;
     line-height: 1.3;
+    padding-left: 0;
+}
+
+.stage-sources-revenue li::before {
+    display: none;
 }
 
 .stage-sources-revenue li strong {
@@ -5268,6 +5283,12 @@ li::before {
     color: #e0e0e0;
     margin-bottom: 0.5rem;
     line-height: 1.3;
+    text-align: center;
+    padding-left: 0;
+}
+
+.mechanic-details li::before {
+    display: none;
 }
 
 /* Value Comparison Section */
@@ -5677,6 +5698,12 @@ li::before {
     color: #e0e0e0;
     margin-bottom: 0.4rem;
     line-height: 1.3;
+    text-align: center;
+    padding-left: 0;
+}
+
+.competitor-details li::before {
+    display: none;
 }
 
 .our-advantage {
@@ -5820,6 +5847,12 @@ li::before {
     color: #e0e0e0;
     margin-bottom: 0.4rem;
     line-height: 1.3;
+    text-align: center;
+    padding-left: 0;
+}
+
+.mitigation-strategy li::before {
+    display: none;
 }
 
 /* Strategic Advantages Section */
