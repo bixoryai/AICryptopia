@@ -3842,6 +3842,102 @@ li::before {
     }
 }
 
+@media (max-width: 768px) {
+    /* Orbital Ecosystem Mobile Styles - Apply to all mobile/tablet devices */
+    .orbital-ecosystem {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    .central-core {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        margin-bottom: 30px;
+        min-width: auto;
+        max-width: 320px;
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        padding: 25px;
+    }
+    
+    .central-core h2 {
+        font-size: 1.5rem;
+    }
+    
+    .orbital-component {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        transform: none !important;
+        margin-bottom: 25px;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    /* Override specific orbital positioning classes */
+    .knowledge-orbital,
+    .trading-orbital,
+    .community-orbital {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        transform: none !important;
+    }
+    
+    .component-card {
+        height: auto;
+        padding: 20px;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .component-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+    
+    .component-icon {
+        font-size: 2.2rem;
+    }
+    
+    .task-examples-mini {
+        margin-top: 15px;
+        gap: 8px;
+        flex-direction: column;
+    }
+    
+    .task-mini {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .aic-flow-lines {
+        display: none;
+    }
+    
+    .ownership-banner {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        margin-top: 25px;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
 @media (max-width: 480px) {
     .bio-card {
         padding: 1rem;
@@ -3959,70 +4055,27 @@ li::before {
         font-size: 8px;
     }
     
-    /* Orbital Ecosystem Mobile Styles */
-    .orbital-ecosystem {
-        height: auto;
-        flex-direction: column;
-        padding: 20px;
-        position: relative;
-    }
-    
+    /* Orbital Ecosystem - Small Mobile Refinements */
     .central-core {
-        position: relative;
-        top: auto;
-        left: auto;
-        transform: none;
-        margin-bottom: 30px;
-        min-width: auto;
-        max-width: 300px;
+        max-width: 280px;
+        padding: 20px;
     }
     
     .central-core h2 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
     
-    .orbital-component {
-        position: relative;
-        top: auto;
-        left: auto;
-        right: auto;
-        bottom: auto;
-        transform: none;
-        margin-bottom: 20px;
-        max-width: 100%;
-    }
-    
-    .component-header {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
+    .component-card {
+        padding: 16px;
     }
     
     .component-icon {
         font-size: 2rem;
     }
     
-    .task-examples-mini {
-        margin-top: 10px;
-        gap: 6px;
-    }
-    
     .task-mini {
         padding: 6px 8px;
         font-size: 0.8rem;
-    }
-    
-    .aic-flow-lines {
-        display: none;
-    }
-    
-    .ownership-banner {
-        position: relative;
-        bottom: auto;
-        left: auto;
-        transform: none;
-        margin-top: 20px;
-        max-width: 100%;
     }
 }
 
