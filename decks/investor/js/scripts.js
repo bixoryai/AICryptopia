@@ -130,6 +130,19 @@ const translations = {
         'solution-4-detail-2': '$AIC tokens reward user contributions',
         'solution-4-detail-3': 'Joyful premium experience, never forced',
         
+        // Problem-Solution Pair 5: Privacy
+        'problem-5-title': 'Privacy Violations',
+        'problem-5-highlight': 'Data Harvesting',
+        'problem-5-detail-1': 'Big Tech AI harvests personal data',
+        'problem-5-detail-2': 'Trading activity tracked and sold',
+        'problem-5-detail-3': 'No control over your information',
+        
+        'solution-5-title': 'Local Data Sovereignty',
+        'solution-5-highlight': 'Privacy First',
+        'solution-5-detail-1': 'Download tools, run locally',
+        'solution-5-detail-2': 'Your data never leaves your device',
+        'solution-5-detail-3': 'True ownership of your AI interactions',
+        
         // Slide 4 Content
         'value-proposition-title': 'User-centric Value Proposition ⭐',
         'crypto-gold-rush-title': '💎 Positioning Users for the Crypto Gold Rush',
@@ -151,6 +164,11 @@ const translations = {
         'value-card-4-title': 'User-First Value',
         'value-card-4-highlight': 'Free + Rewarding',
         'value-card-4-description': 'Core features FREE, $AIC tokens reward participation. Access institutional-grade tools for mass adoption',
+        
+        // Value Card 5: Privacy
+        'value-card-5-title': 'Local Privacy & Control',
+        'value-card-5-highlight': 'Your Data, Your Device',
+        'value-card-5-description': 'Download AI trading tools for free—run everything locally. Your data stays private while you capture crypto wealth',
         
         // Comparison Table
         'competitive-advantage-title': '🚀 Our Advantage vs Fee-Heavy Competitors',
@@ -196,11 +214,11 @@ const translations = {
         'knowledge-task-2': '✅ Verify content',
         
         // AI Trading Tools Component
-        'trading-tools-title': 'AI-Powered Trading Tools',
-        'trading-feature-1': 'Intelligent trading bots',
-        'trading-feature-2': 'Market analysis AI',
-        'trading-feature-3': 'Risk management tools',
-        'trading-feature-4': 'Portfolio optimization',
+        'trading-tools-title': 'AI-Powered Crypto Tools',
+        'trading-feature-1': 'Intelligent trading bots & analysis',
+        'trading-feature-2': 'Risk management & optimization',
+        'trading-feature-3': '🔒 Download & run locally',
+        'trading-feature-4': '🛡️ Your data stays private',
         'trading-task-1': '📊 Share insights',
         'trading-task-2': '🔧 Tool feedback',
         
@@ -561,10 +579,11 @@ const translations = {
         // Allocation 1: Development
         'allocation-1-title': 'Development (40% - $200K)',
         'allocation-1-highlight': 'Foundation + $AIC Launch',
-        'allocation-1-detail-1': '🏛️ Knowledge Nexus MVP development',
-        'allocation-1-detail-2': '💎 **$AIC Tokenomics Implementation**',
-        'allocation-1-detail-3': '🎯 User reward system architecture',
-        'allocation-1-detail-4': '🔧 Open-source tool integration',
+        'allocation-1-detail-1': '🏛️ Core infra setup',
+        'allocation-1-detail-2': '📚 Knowledge Nexus MVP',
+        'allocation-1-detail-3': '💎 $AIC Tokenomics',
+        'allocation-1-detail-4': '🎯 User reward system',
+        'allocation-1-milestone': '1K users earning $AIC',
         
         // Allocation 2: Marketing
         'allocation-2-title': 'Marketing (30% - $150K)',
@@ -1220,6 +1239,19 @@ const translations = {
         'solution-4-detail-2': '$AIC代币奖励用户贡献',
         'solution-4-detail-3': '愉悦的高级体验，从不强制',
         
+        // Problem-Solution Pair 5: Privacy
+        'problem-5-title': '隐私侵犯',
+        'problem-5-highlight': '数据收割',
+        'problem-5-detail-1': '大型科技公司AI收割个人数据',
+        'problem-5-detail-2': '交易活动被跟踪并出售',
+        'problem-5-detail-3': '无法控制您的信息',
+        
+        'solution-5-title': '本地数据主权',
+        'solution-5-highlight': '隐私优先',
+        'solution-5-detail-1': '下载工具，本地运行',
+        'solution-5-detail-2': '您的数据永远不会离开您的设备',
+        'solution-5-detail-3': '您对AI交互的真实所有权',
+        
         // Slide 4 Content
         'value-proposition-title': '以用户为中心的价值主张 ⭐',
         'crypto-gold-rush-title': '💎 为用户在加密淘金热中定位',
@@ -1241,6 +1273,11 @@ const translations = {
         'value-card-4-title': '用户优先价值',
         'value-card-4-highlight': '免费+奖励',
         'value-card-4-description': '核心功能免费，$AIC代币奖励参与。为大规模采用获得机构级工具',
+        
+        // Value Card 5: Privacy
+        'value-card-5-title': '本地隐私与控制',
+        'value-card-5-highlight': '您的数据，您的设备',
+        'value-card-5-description': '下载AI交易工具免费——在本地运行一切。您的数据在您捕获加密财富时保持私密',
         
         // Comparison Table
         'competitive-advantage-title': '🚀 我们相对于费用沉重竞争对手的优势',
@@ -1286,11 +1323,11 @@ const translations = {
         'knowledge-task-2': '✅ 验证内容',
         
         // AI Trading Tools Component
-        'trading-tools-title': 'AI驱动的交易工具',
-        'trading-feature-1': '智能交易机器人',
-        'trading-feature-2': '市场分析AI',
-        'trading-feature-3': '风险管理工具',
-        'trading-feature-4': '投资组合优化',
+        'trading-tools-title': 'AI驱动的加密工具',
+        'trading-feature-1': '智能交易机器人与分析',
+        'trading-feature-2': '风险管理与优化',
+        'trading-feature-3': '🔒 下载并本地运行',
+        'trading-feature-4': '🛡️ 您的数据保持私密',
         'trading-task-1': '📊 分享洞察',
         'trading-task-2': '🔧 工具反馈',
         
@@ -1317,7 +1354,7 @@ const translations = {
         'phase-1-deliverable-1': '🏛️ 核心基础设施搭建',
         'phase-1-deliverable-2': '📚 知识枢纽MVP',
         'phase-1-deliverable-3': '💎 $AIC代币经济学',
-        'phase-1-deliverable-4': '🎯 用户奖励系统',
+        'phase-1-deliverable-4': '�� 用户奖励系统',
         'phase-1-milestone': '1千名用户获得$AIC',
         
         // Phase 2

@@ -6138,3 +6138,44 @@ li::before {
         gap: 0.8rem;
     }
 }
+
+.user-first-value:hover {
+    border-color: #ffd700;
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+}
+
+.privacy-value {
+    border-color: rgba(128, 0, 255, 0.3);
+}
+
+.privacy-value:hover {
+    border-color: #8000ff;
+    box-shadow: 0 10px 30px rgba(128, 0, 255, 0.3);
+}
+
+.value-card .card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.user-first-value .card-highlight {
+    background: rgba(255, 215, 0, 0.2);
+    color: #ffdd88;
+    border: 1px solid rgba(255, 215, 0, 0.4);
+}
+
+.privacy-value .card-highlight {
+    background: rgba(128, 0, 255, 0.2);
+    color: #cc88ff;
+    border: 1px solid rgba(128, 0, 255, 0.4);
+}
+
+.value-card .card-description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #cccccc;
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
