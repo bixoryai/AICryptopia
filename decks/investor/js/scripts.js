@@ -1147,7 +1147,7 @@ const translations = {
         'main-subtitle': '用去中心化AI普及世代财富获取',
         'prepared-by': '制作方：AICryptopia团队',
         'date': '日期：2025年1月',
-        'cta-button': '体验加密冲击乌托邦 💎',
+        'cta-button': '体验加密乐园冲浪 💎',
         
         // Slide 2 Content
         'opportunity-title': '市场机遇 📈',
